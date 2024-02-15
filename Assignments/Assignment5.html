@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment5</title>
+</head>
+<style>
+button{background-color: cornflowerblue; color:white; 
+    height:400px; width: 400px; 
+    text-align: center; padding: 50px; cursor:pointer;box-shadow: 5px 5px #999}
+    button:hover {background-color: darkblue}
+    button:active {
+      background-color: darkblue;
+      box-shadow: 3px 3px #666;
+      transform: translateY(5px 5px);}</style>
+<script src='./ACLED_3_JSON.js'></script>
+
+<body>
+    <h1>Assignment 5</h1>
+    <button onclick="console.log(data.features.map(e=>e.properties.LOCATION))"><b>Click to create array of cities in which incidents occured</b></button> 
+</body>
+</html>
