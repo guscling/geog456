@@ -1,0 +1,601 @@
+EVENT_ID_CNTY,EVENT_DATE,YEAR,TIME_PRECISION,EVENT_TYPE,SUB_EVENT_TYPE,ACTOR1,ACTOR2,CIVILIAN_TARGETING,COUNTRY,ADMIN1,LOCATION,LATITUDE,LONGITUDE,GEO_PRECISION,FATALITIES,TAGS,TIMESTAMP
+UKR54571,27-Feb-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Ivano-Frankivsk,Ivano-Frankivsk,48.922,24.71,1,0,nan,1649184811
+UKR77196,15-Oct-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Zarichne,49.019,37.921,2,10,nan,1693927407
+UKR86383,29-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Odesa,Stepove,46.7,30.075,1,0,nan,1673376409
+UKR63181,15-Jul-22,2022,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,Civilians (Ukraine),Civilian targeting,Ukraine,Dnipropetrovsk,Dnipro,48.459,35.039,1,3,nan,1682436936
+UKR75308,6-Oct-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Bakhmut,48.596,38.0,2,0,nan,1665508789
+UKR71965,8-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Siversk,48.873,38.096,2,0,nan,1663096253
+UKR65016,28-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Kherson,Arkhanhelske,47.432,33.406,1,1,nan,1659462993
+UKR84816,14-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Putyvl,51.337,33.871,2,0,nan,1673376404
+UKR125016,30-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Kherson,Novovorontsovka,47.5,33.917,2,0,nan,1694008046
+UKR61960,28-Jun-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Kamianske,47.542,35.366,1,0,nan,1657040029
+UKR70534,29-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Vodolahy,51.179,34.921,1,0,nan,1663096257
+UKR75888,7-Oct-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Spirne,48.808,38.259,2,0,nan,1665508789
+UKR83887,7-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Novovasylivka,52.328,33.454,2,0,nan,1670965353
+UKR77270,16-Oct-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Bakhmutske,48.664,38.095,2,0,nan,1667319406
+UKR71331,6-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Chernihiv,Khrinivka,52.075,31.841,1,0,nan,1663096250
+UKR58720,26-May-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Kharkiv,Zavhorodnye,49.2,36.912,2,10,nan,1654008408
+UKR70820,31-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Donetsk,Slovyansk,48.853,37.606,1,1,nan,1663096258
+UKR54840,26-Mar-22,2022,1,Battles,Armed clash,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Sumy,Okhtyrka,50.31,34.899,2,0,nan,1649184812
+UKR55527,10-Apr-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Malynivka,47.672,36.476,2,0,nan,1650394650
+UKR60634,16-Jun-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Luhansk,Mykolaivka,48.778,38.334,1,0,nan,1669737880
+UKR59307,3-Jun-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Marinka,47.943,37.505,2,0,nan,1654627712
+UKR62794,6-Jul-22,2022,1,Explosions/Remote violence,Remote explosive/landmine/IED,Kherson Communal Militia (Ukraine),Military Forces of Russia (2000-),nan,Ukraine,Kherson,Kherson,46.656,32.618,1,0,nan,1657635466
+UKR85130,17-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kherson,Tiahynka,46.781,33.056,2,0,nan,1673376405
+UKR78373,17-Apr-22,2022,1,Explosions/Remote violence,Remote explosive/landmine/IED,Military Forces of Russia (2000-),Police Forces of Ukraine (2019-) State Emergency Service of Ukraine,nan,Ukraine,Kharkiv,Kharkiv,49.981,36.253,1,3,nan,1667319407
+UKR73597,19-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Kostiantynivka,47.866,37.408,2,0,nan,1664300891
+UKR66506,1-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Orikhiv,47.567,35.786,2,0,nan,1660055881
+UKR57723,12-May-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Luhansk,Severodonetsk,48.947,38.491,1,0,nan,1652811458
+UKR63242,12-Jul-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Mazanivka,48.993,37.352,2,0,nan,1658249348
+UKR83594,3-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Sopych,51.849,34.364,1,0,nan,1670965352
+UKR74078,22-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Zakitne,48.896,37.965,1,0,nan,1664300892
+UKR121845,9-Oct-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Zaporizhia,Novooleksandrivka,47.751,35.364,2,0,nan,1694008040
+UKR85481,21-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Lyman,48.99,37.806,1,0,nan,1673376406
+UKR78698,3-Nov-22,2022,1,Explosions/Remote violence,Air/drone strike,Military Forces of Ukraine (2019-) Air Force,Military Forces of Russia (2000-),nan,Ukraine,Kherson,Kherson,46.656,32.618,3,32,nan,1667924777
+UKR68029,12-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Mykolaiv,Lepetykha,47.323,33.051,2,0,nan,1660674709
+UKR62916,7-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Chernihiv,Mykhalchyna-Sloboda,52.313,33.211,1,0,nan,1657635467
+UKR63385,7-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Kutuzivka,50.042,36.47,1,0,nan,1658249348
+UKR73321,16-Sep-22,2022,1,Battles,Government regains territory,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Kharkiv,Kupiansk,49.711,37.615,1,0,nan,1664300890
+UKR62260,30-Jun-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Donetsk,Luhanske,48.431,38.255,1,0,nan,1680636714
+UKR60088,10-Jun-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Bairak,48.316,38.132,2,0,nan,1655227261
+UKR84168,5-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Donetsk,Donetsk - Kyivskyi,47.986,37.862,1,4,nan,1680636725
+UKR121601,22-Jun-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Novoselivka,48.268,37.851,2,0,nan,1694008040
+UKR82279,25-Nov-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Mykolaiv,Ochakiv,46.613,31.55,2,0,nan,1669737882
+UKR55595,11-Apr-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Kharkiv,Kharkiv,49.981,36.253,1,8,nan,1650394649
+UKR70448,29-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Chervone,49.0,37.004,2,0,nan,1663096252
+UKR77955,11-May-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Mala Danylivka,50.063,36.166,1,0,nan,1667319407
+UKR59596,31-May-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Donetsk,Shakhta imeni Lenina,48.324,38.007,1,0,nan,1680636712
+UKR67150,6-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Hrushuvakha,49.115,36.897,2,0,nan,1660674709
+UKR80044,5-Nov-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Chervone,47.657,36.391,2,0,nan,1668530072
+UKR79620,2-Nov-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Luhansk,Severodonetsk,48.947,38.491,1,0,nan,1667924775
+UKR69524,22-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Mykolaiv,Polyana,47.167,32.683,1,0,nan,1663096254
+UKR64319,20-Jul-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-) Air Force,Military Forces of Ukraine (2019-) Air Force,nan,Ukraine,Donetsk,Kramatorsk,48.731,37.582,2,0,nan,1682436936
+UKR64030,11-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),nan,nan,Ukraine,Kherson,Chornobaivka,46.697,32.553,1,0,nan,1658249347
+UKR54168,20-Mar-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kyiv,Bucha,50.544,30.212,1,0,nan,1648582629
+UKR84092,28-Nov-22,2022,1,Explosions/Remote violence,Air/drone strike,Military Forces of Ukraine (2019-) Air Force,Military Forces of Russia (2000-),nan,Ukraine,Donetsk,Ozarianivka,48.45,37.955,1,0,nan,1670965353
+UKR66745,4-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Novohryhorivka,47.814,36.435,1,0,nan,1660055880
+UKR121692,28-Jun-22,2022,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,Military Forces of Ukraine (2019-),nan,Ukraine,Luhansk,Lysychansk,48.905,38.435,2,0,nan,1694008040
+UKR77564,19-Oct-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Kurdiumivka,48.468,37.957,2,0,nan,1666712171
+UKR78742,1-Nov-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Maiorsk,48.4,37.971,2,0,nan,1667924775
+UKR63747,14-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Esman,51.77,34.067,2,0,nan,1658249349
+UKR54148,22-Mar-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Marinka,47.943,37.505,1,0,nan,1648582627
+UKR73338,17-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Donetsk,Donetsk - Kalininskyi,48.005,37.84,2,0,nan,1680636720
+UKR72035,8-Sep-22,2022,1,Explosions/Remote violence,Remote explosive/landmine/IED,Unidentified Military Forces,Civilians (Ukraine),Civilian targeting,Ukraine,Donetsk,Mariupol,47.13,37.571,1,0,nan,1663096246
+UKR64914,17-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Donetsk,Shakhta imeni Gagarina,48.343,37.942,2,0,nan,1680636716
+UKR66511,1-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Protopopivka,49.243,36.914,2,0,nan,1660055881
+UKR75671,3-Oct-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Marinka,47.943,37.505,2,0,nan,1665508789
+UKR82676,1-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Prechystivka,47.779,37.075,2,0,nan,1670355991
+UKR71829,7-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Novopil,47.807,36.625,2,0,nan,1663096252
+UKR139845,25-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Kharkiv,Borshchova,50.161,36.424,1,0,nan,1704833932
+UKR60654,16-Jun-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Ulanove,51.755,34.301,1,0,nan,1655837875
+UKR53474,18-Mar-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Chernihiv,Chernihiv,51.505,31.285,1,0,nan,1647984302
+UKR66901,31-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Donetsk,Rumyantsevo,48.343,38.068,1,0,nan,1680636717
+UKR85597,22-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kherson,Lvove,46.791,33.149,1,0,nan,1673376406
+UKR59751,10-Jun-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Zaporozhets,47.375,37.972,2,0,nan,1655227262
+UKR56921,30-Apr-22,2022,1,Battles,Government regains territory,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Kharkiv,Verhnya Rohanka,50.024,36.554,1,0,nan,1652217211
+UKR83559,8-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Dnipropetrovsk,Marhanets,47.635,34.628,2,0,nan,1670965352
+UKR85842,24-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Novopavlivka,47.6,35.716,2,0,nan,1673376407
+UKR79044,29-Oct-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Serebrianka,48.921,38.128,2,0,nan,1667924776
+UKR56359,23-Apr-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Donetsk,Donetsk - Kuibyshivskyi,48.023,37.728,2,0,nan,1680636710
+UKR77188,15-Oct-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Soledar,48.697,38.061,2,0,nan,1666712171
+UKR59593,31-May-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Donetsk,Mykhaylivka,48.244,37.975,1,0,nan,1680636712
+UKR65922,29-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Zaitseve,48.429,38.009,2,0,nan,1659462993
+UKR71097,2-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Maiske,52.075,33.7,2,0,nan,1663096256
+UKR137778,15-Jun-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Kharkiv,Tsupivka,50.27,36.173,1,0,nan,1701813039
+UKR66488,1-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Korobochkyne,49.778,36.815,1,0,nan,1660055881
+UKR58283,20-May-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Sukha Balka,48.322,37.76,1,0,nan,1653401104
+UKR76527,10-Oct-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Dorozhnianka,47.589,36.261,2,0,nan,1666188231
+UKR69927,25-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Dnipropetrovsk,Koshove,47.556,33.429,1,0,nan,1663096259
+UKR62524,3-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Sumy,Bachivsk,51.845,34.278,2,0,nan,1657635468
+UKR67646,10-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Donetsk,Donetsk - Kalininskyi,48.005,37.84,1,0,nan,1680636718
+UKR77567,19-Oct-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Marinka,47.943,37.505,2,0,nan,1666712171
+UKR73347,17-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Donetsk,Horlivka,48.313,38.042,1,2,nan,1680636720
+UKR81807,13-Nov-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Kharkiv,Shevchenkove,49.696,37.173,1,0,nan,1669737880
+UKR58285,20-May-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Dnipropetrovsk,Velyka Kostromka,47.534,33.721,1,0,nan,1653401104
+UKR76688,12-Oct-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Lezhyne,47.807,35.361,1,0,nan,1666188232
+UKR70667,30-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Velyki Prokhody,50.2,36.336,1,0,nan,1663096256
+UKR57780,13-May-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Donetsk,Yasunivka,48.134,37.948,1,0,nan,1680636711
+UKR53174,10-Mar-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),nan,nan,Ukraine,Donetsk,Vasylivka,48.172,37.86,1,0,nan,1647376820
+UKR75460,1-Mar-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Kyiv City,Kyiv,50.45,30.522,1,0,nan,1665508790
+UKR59681,6-Jun-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Donetsk,Chasiv Yar,48.587,37.832,1,1,nan,1655227262
+UKR86354,29-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Mykolaiv,Ochakiv,46.613,31.55,2,0,nan,1673376408
+UKR118789,5-Dec-22,2022,1,Battles,Armed clash,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Luhansk,Kuzemivka,49.521,37.982,2,0,nan,1694008035
+UKR76341,10-Oct-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Donetsk,Kostiantynivka,47.866,37.408,1,0,nan,1666188232
+UKR52633,3-Mar-22,2022,1,Battles,Armed clash,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-) Air Force,nan,Ukraine,Mykolaiv,Balovne,47.052,31.884,2,3,nan,1646783636
+UKR54817,29-Mar-22,2022,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Luhansk,Voyevodivka,48.98,38.444,2,0,nan,1649184811
+UKR69704,24-Aug-22,2022,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Kherson,Bila Krynytsia,47.352,33.2,2,0,nan,1663096254
+UKR74543,26-Sep-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Sumy,Seredyna-Buda,52.189,34.036,2,0,nan,1664907091
+UKR76982,7-May-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Luhansk,Voyevodivka,48.98,38.444,1,0,nan,1666712170
+UKR100142,29-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Kharkiv,Kivsharivka,49.63,37.673,1,1,nan,1682436934
+UKR122842,26-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Novhorodske,48.332,37.837,2,0,nan,1694008042
+UKR82440,2-Dec-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Luhansk,Novoselivske,49.523,37.953,2,0,nan,1670965351
+UKR57723,12-May-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Luhansk,Severodonetsk,48.947,38.491,1,0,nan,1652811458
+UKR124228,24-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Yevhenivka,47.67,37.085,2,0,nan,1694008045
+UKR135809,3-Jun-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Bezruky,50.176,36.12,1,0,nan,1700602890
+UKR58040,19-May-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Kharkiv,Tsyrkuny,50.082,36.386,1,1,nan,1669144125
+UKR65658,23-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Ruska Lozova,50.142,36.29,2,0,nan,1659462992
+UKR62211,1-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Pisky,48.067,37.666,2,0,nan,1657040029
+UKR120092,10-Nov-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Kherson,Kherson,46.656,32.618,2,0,nan,1694008037
+UKR120156,9-Nov-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kherson,Novopoltavka,47.145,32.985,2,0,nan,1694008037
+UKR83633,7-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Stepove,47.712,36.595,1,0,nan,1670965352
+UKR71439,5-May-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Soledar,48.697,38.061,1,0,nan,1663096249
+UKR68117,30-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Kluhyno-Bashkyrivka,49.841,36.711,1,0,nan,1663096250
+UKR67074,6-Aug-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Bakhmutske,48.664,38.095,2,0,nan,1660674708
+UKR76746,13-Oct-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Chasiv Yar,48.587,37.832,1,0,nan,1666188232
+UKR57694,12-May-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Kharkiv,Ruski Tyshky,50.135,36.419,2,0,nan,1652811459
+UKR82677,1-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Kharkiv,Slobozhanske,50.189,36.429,2,0,nan,1670355991
+UKR69571,23-Aug-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Bakhmut,48.596,38.0,2,10,nan,1693927407
+UKR62727,5-Jul-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Novoluhanske,48.426,38.171,2,0,nan,1657635467
+UKR56960,1-May-22,2022,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Zaporizhia,Omelnyk,47.642,35.877,1,0,nan,1652217209
+UKR67108,6-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Donetsk,Kostiantynivka,48.533,37.717,1,0,nan,1660674707
+UKR75017,26-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Kherson,Nova Kakhovka,46.754,33.349,1,0,nan,1664907089
+UKR73220,7-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),nan,nan,Ukraine,Kherson,Kozatske,46.785,33.338,2,0,nan,1664300890
+UKR55533,10-Apr-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Zaporizhia,Melitopol,46.849,35.365,1,0,nan,1650394650
+UKR73144,4-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Yelyzavetivka,47.886,37.302,1,0,nan,1664300890
+UKR82734,26-Nov-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kherson,Muzykivka,46.752,32.557,2,0,nan,1670355991
+UKR77958,21-Oct-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Luhansk,Svatove,49.41,38.15,2,0,nan,1667319407
+UKR77559,19-Oct-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Donetsk,Donetsk - Voroshilovsky,48.018,37.806,1,0,local administrators,1687837309
+UKR62107,30-Jun-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Novoluhanske,48.426,38.171,1,0,nan,1704833932
+UKR57057,2-May-22,2022,1,Explosions/Remote violence,Air/drone strike,Military Forces of Ukraine (2019-) Air Force,Military Forces of Russia (2000-) Navy,nan,Ukraine,Odesa,Zmiyinyy Island,45.255,30.204,2,0,nan,1678206751
+UKR69794,24-Aug-22,2022,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Donetsk,Novopil,47.807,36.625,2,0,nan,1663096252
+UKR54051,26-Feb-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Donetsk,Staryi Karavan,48.922,37.782,2,1,nan,1648582629
+UKR81010,13-Nov-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Rozdolivka,48.754,38.081,2,0,nan,1669144125
+UKR85979,26-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Bilopillia,51.148,34.301,2,0,nan,1673376407
+UKR70465,29-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Ivanivka,50.289,35.44,2,0,nan,1663096255
+UKR65345,25-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Dnipropetrovsk,Kryvyi Rih,47.909,33.393,2,0,nan,1659462991
+UKR70015,25-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Vremivka,47.834,36.815,2,0,nan,1663096257
+UKR59947,8-Jun-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Raihorodok,48.898,37.728,2,0,nan,1655227261
+UKR59707,5-Jun-22,2022,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Donetsk,New York,48.332,37.836,2,0,nan,1655227261
+UKR75351,28-Sep-22,2022,1,Battles,Armed clash,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Donetsk,Shandryholovo,49.091,37.721,2,0,nan,1665508788
+UKR71789,7-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Mykolaiv,Dniprovske,46.636,31.873,2,0,nan,1663096255
+UKR74438,26-Sep-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Kharkiv,Kamianka,49.978,37.833,2,0,nan,1664907090
+UKR63251,14-Jul-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Kodema,48.473,38.086,2,0,nan,1658249348
+UKR53589,16-Mar-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Velyka Pysarivka,50.424,35.48,1,0,nan,1647984300
+UKR76880,8-Oct-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Donetsk,Donetsk - Kirovskyi,47.968,37.548,2,0,nan,1680636722
+UKR137863,20-Jun-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Dnipropetrovsk,Velyka Kostromka,47.534,33.721,1,0,nan,1701813039
+UKR76010,29-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),nan,nan,Ukraine,Kherson,Brylivka,46.42,33.141,1,0,nan,1665508788
+UKR75996,4-Oct-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Donetsk,Donetsk - Kuibyshivskyi,48.023,37.728,1,1,nan,1680636722
+UKR78210,24-Oct-22,2022,1,Battles,Government regains territory,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Luhansk,Karmazynivka,49.311,38.03,1,0,nan,1667319408
+UKR55727,14-Apr-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Bohorodychne,49.016,37.508,1,0,nan,1654032713
+UKR74481,29-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Kanivske,47.684,35.104,1,0,nan,1664907089
+UKR70146,26-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Velyka Pysarivka,50.424,35.48,2,0,nan,1663096258
+UKR82912,29-Nov-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kherson,Kizomys,46.563,32.348,2,0,nan,1670355991
+UKR56629,27-Apr-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Lastochkyne,48.149,37.682,1,0,nan,1665526393
+UKR69153,19-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Shestakove,50.07,36.624,1,0,nan,1663096255
+UKR77047,8-Oct-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Zaporizhia,Tokmak,47.255,35.712,2,42,nan,1666712170
+UKR81276,17-Nov-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Fotovyzh,51.892,34.196,2,0,nan,1669144126
+UKR58957,23-May-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Donetsk,Donetsk - Kuibyshivskyi,48.023,37.728,1,0,nan,1680636712
+UKR81118,14-Nov-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Tabaivka,49.596,37.875,2,0,nan,1669144126
+UKR85741,23-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kherson,Stanislav,46.579,32.15,2,0,nan,1673376407
+UKR54627,1-Apr-22,2022,1,Battles,Government regains territory,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Kyiv,Ivankiv,50.939,29.894,1,0,nan,1649184809
+UKR76118,7-Oct-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Novomykhailivka,49.2,37.871,2,0,nan,1666188230
+UKR53064,8-Mar-22,2022,1,Battles,Armed clash,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Sumy,Hlukhiv,51.678,33.916,2,0,nan,1647376820
+UKR76558,10-Oct-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Chernihiv,Nizhyn,51.048,31.887,1,0,nan,1666188231
+UKR84258,5-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Kurakhove,47.984,37.282,1,0,nan,1673376403
+UKR58744,21-May-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Novodanylivka,47.524,35.824,2,0,nan,1654008408
+UKR137833,18-Jun-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Netaylove,48.108,37.551,1,0,nan,1701813039
+UKR75287,4-Oct-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Bakhmut,48.596,38.0,2,0,nan,1666188229
+UKR84077,28-Nov-22,2022,1,Battles,Armed clash,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Luhansk,Dibrova,49.001,38.112,2,0,nan,1670965353
+UKR120472,8-May-22,2022,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Soledar,48.697,38.061,2,0,nan,1694008038
+UKR84443,11-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Donetsk,Donetsk - Kyivskyi,47.986,37.862,2,0,nan,1680636725
+UKR60533,13-Jun-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Luhansk,Vrubivka,48.738,38.387,2,0,nan,1655837877
+UKR81335,17-Nov-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Yakovlivka,48.706,38.149,2,0,nan,1669144125
+UKR75911,25-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Mykolaiv,Kalynivka,47.046,32.18,1,0,nan,1665508788
+UKR60849,16-Jun-22,2022,1,Explosions/Remote violence,Air/drone strike,Military Forces of Ukraine (2019-) Air Force,Military Forces of Russia (2000-),nan,Ukraine,Kherson,Kherson,46.656,32.618,2,3,nan,1655837876
+UKR71542,8-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Dnipropetrovsk,Dobra Nadiya,47.593,34.702,1,0,nan,1663096247
+UKR70244,27-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Shevchenkove,51.679,33.673,2,0,nan,1663096255
+UKR67411,8-Aug-22,2022,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Kharkiv,Bairak,50.151,36.729,2,0,nan,1660674708
+UKR74318,6-Mar-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Kyiv,Irpin,50.522,30.251,1,8,nan,1664907089
+UKR58121,15-May-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Ozerne,48.897,37.912,1,0,nan,1653401104
+UKR82107,22-Nov-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Vuhledar,47.779,37.248,2,0,nan,1673986322
+UKR118625,4-Jun-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-) Air Force,nan,Ukraine,Odesa,Odesa,46.464,30.739,2,0,nan,1694008035
+UKR80234,7-Nov-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Zarichne,49.019,37.921,1,0,nan,1668530074
+UKR76777,13-Oct-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Kharkiv,Olhivka,49.245,37.85,2,1,nan,1693927407
+UKR61579,23-Jun-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Donetsk,Panteleimonivka,48.207,37.973,1,0,nan,1680636714
+UKR56970,1-May-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Luhansk,Popasna,48.633,38.378,1,1,nan,1652217210
+UKR81767,14-Nov-22,2022,1,Explosions/Remote violence,Remote explosive/landmine/IED,Melitopol Communal Militia (Ukraine),Civilians (Ukraine),Civilian targeting,Ukraine,Zaporizhia,Melitopol,46.849,35.365,1,0,local administrators,1700605346
+UKR69583,23-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Dnipropetrovsk,Dnipro,48.459,35.039,1,0,nan,1663096247
+UKR56180,20-Apr-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Zaporizhia,Temyrivka,47.824,36.572,2,0,nan,1650997733
+UKR54494,30-Mar-22,2022,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Donetsk,Mariupol,47.13,37.571,1,0,nan,1665526396
+UKR85369,20-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Kyslivka,49.641,37.905,2,0,nan,1673376406
+UKR58396,14-May-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Luhansk,Kalynove-Borshchuvate,48.62,38.492,1,2,nan,1653401105
+UKR75919,6-Oct-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Kherson,Kherson,46.656,32.618,1,0,nan,1665508790
+UKR137866,22-Jun-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Luhansk,Lysychansk,48.905,38.435,2,0,nan,1701813039
+UKR67183,6-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Mykolaiv,Kvitneve,47.022,32.454,2,0,nan,1660674709
+UKR64735,20-Jul-22,2022,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Kharkiv,Rtyshchivka,49.722,36.779,2,0,nan,1658857905
+UKR76330,27-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Kharkiv,Pervomaiskyi,49.387,36.215,1,1,nan,1666188230
+UKR119090,31-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Ivanopillia,48.48,37.76,2,0,nan,1694008036
+UKR57414,8-May-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Donetsk,Donetsk - Kuibyshivskyi,48.023,37.728,1,0,nan,1680636711
+UKR70813,31-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Shestakove,50.07,36.624,2,0,nan,1663096256
+UKR65863,28-Jul-22,2022,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Donetsk,Vesela Dolyna,48.55,38.066,2,0,nan,1659462992
+UKR56368,23-Apr-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Illinka,48.01,37.305,1,0,nan,1688509044
+UKR70556,30-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Brazhkivka,49.044,37.215,2,0,nan,1663096252
+UKR67164,6-Aug-22,2022,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Kherson,Andriivka,47.176,33.046,2,0,nan,1660674709
+UKR55655,12-Apr-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Donetsk,Kruta Balka,48.143,37.826,2,0,nan,1680636709
+UKR118732,4-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Paraskoviivka,48.66,37.998,2,0,nan,1694008035
+UKR75153,26-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Luhansk,Rubizhne,49.012,38.38,1,0,nan,1664907090
+UKR58680,25-May-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Luhansk,Lysychansk,48.905,38.435,1,1,nan,1654008407
+UKR139632,28-Jun-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Yakovlivka,48.706,38.149,2,0,nan,1704833931
+UKR59913,7-Jun-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Nahirne,48.741,38.244,2,0,nan,1655227261
+UKR55155,5-Apr-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Luhansk,Kalinovo,48.569,38.525,2,0,nan,1649784778
+UKR82283,25-Nov-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Prechystivka,47.779,37.075,2,0,nan,1669737882
+UKR83988,9-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Hryhorivka,47.408,37.898,2,0,nan,1670965353
+UKR65071,26-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Bilohorivka,48.733,38.215,2,0,nan,1659462992
+UKR84647,13-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Esman,51.77,34.067,2,0,nan,1673376404
+UKR65201,28-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Donetsk,Hirnyk,48.056,37.372,1,1,nan,1659462993
+UKR139697,18-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Kherson,Davydiv Brid,47.241,33.193,2,0,nan,1704833932
+UKR55856,15-Apr-22,2022,1,Battles,Armed clash,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Donetsk,Shakhta imeni Gagarina,48.343,37.942,1,0,nan,1680636709
+UKR52967,7-Mar-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Zhytomyr,Korosten,50.959,28.638,1,0,nan,1651165023
+UKR54781,30-Mar-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Luhansk,Novoivanivka,48.746,38.467,1,0,nan,1649184810
+UKR67748,10-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Mykolaiv,Luch,46.829,32.221,2,0,nan,1660674708
+UKR76904,12-Oct-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Donetsk,Donetsk - Kyivskyi,47.986,37.862,1,0,nan,1680636722
+UKR61339,21-Jun-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Petrivske,49.175,36.895,1,0,nan,1656435887
+UKR57207,5-May-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Luhansk,Hirske,48.735,38.495,1,0,nan,1652217209
+UKR70554,30-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Bohorodychne,49.016,37.508,1,0,nan,1663096250
+UKR122659,16-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Zaporizhia,Novodanylivka,47.524,35.824,2,10,nan,1694008042
+UKR56304,22-Apr-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Luhansk,Rubizhne,49.012,38.38,2,0,nan,1650997734
+UKR123958,19-Sep-22,2022,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,Military Forces of Ukraine (2019-) Territorial Defense Forces,nan,Ukraine,Mykolaiv,Nova Odesa,47.308,31.785,2,5,nan,1694008044
+UKR60009,8-Jun-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Husarivka,49.358,36.797,1,0,nan,1655227261
+UKR63818,14-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Vyimka,48.804,38.147,2,0,nan,1658249348
+UKR62176,1-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Chernihiv,Kolos,52.338,33.314,2,0,nan,1657040028
+UKR78065,22-Oct-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Vesele,48.746,38.151,2,0,nan,1667319408
+UKR61513,18-Jun-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Donetsk,Makiivka,48.046,37.969,1,0,nan,1680636714
+UKR73237,9-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Dnipropetrovsk,Nikopol,47.571,34.396,1,0,nan,1664300890
+UKR55094,4-Apr-22,2022,1,Battles,Armed clash,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Luhansk,Kalinovo,48.569,38.525,2,4,nan,1649784779
+UKR55326,7-Apr-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Preobrazhenka,47.576,35.802,1,0,nan,1649784779
+UKR77752,21-Oct-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Chernihiv,Hai,51.649,32.378,2,0,nan,1693943169
+UKR64208,16-Jul-22,2022,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Donetsk,Soledar,48.697,38.061,2,0,nan,1658857905
+UKR84644,13-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Dorozhnianka,47.589,36.261,2,0,nan,1673376404
+UKR60931,22-Jun-22,2022,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Donetsk,Shevchenko,48.22,37.145,2,0,nan,1656435886
+UKR86137,27-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Stupochky,48.536,37.827,2,0,nan,1673376408
+UKR72522,14-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Charivne,47.58,36.034,1,0,nan,1663703412
+UKR123779,16-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Kharkiv,Kharkiv,49.981,36.253,2,0,nan,1694008044
+UKR79796,1-Nov-22,2022,1,Battles,Armed clash,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Kherson,Sukhanove,47.13,33.536,2,0,nan,1668530073
+UKR74093,22-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Kharkiv,Kupiansk,49.711,37.615,1,0,nan,1664300892
+UKR76462,8-Oct-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Mykolaiv,Zoria,47.539,33.078,2,0,nan,1666188232
+UKR57376,7-May-22,2022,1,Battles,Non-state actor overtakes territory,NAF: United Armed Forces of Novorossiya,Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Zachativka,47.474,37.198,1,0,nan,1680636711
+UKR65704,25-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Mykolaiv,Shevchenkove,46.863,32.191,1,0,nan,1659462993
+UKR82133,23-Nov-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Khotin,51.079,34.78,2,0,nan,1669737882
+UKR79127,30-Oct-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Terny,49.886,38.027,2,0,nan,1667924776
+UKR73312,15-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Kherson,Krynychanka,47.04,33.202,1,0,nan,1664300890
+UKR57872,15-May-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Kharkiv,Dovhenke,49.019,37.318,2,0,nan,1653401105
+UKR59732,8-Jun-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Opytne,48.096,37.721,2,0,nan,1655227261
+UKR76698,12-Oct-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Novoandriivka,47.562,35.697,1,0,nan,1666188232
+UKR56756,28-Apr-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Luhansk,Rubizhne,49.012,38.38,1,0,nan,1652217212
+UKR67082,6-Aug-22,2022,1,Battles,Armed clash,NAF: United Armed Forces of Novorossiya,Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Yakovlivka,48.706,38.149,2,0,nan,1680636718
+RUS9231,2-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),nan,nan,Russia,Belgorod,Staryi Khutor,50.234,37.66,1,0,nan,1670352627
+UKR68852,17-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Stepnohirsk,47.587,35.356,2,0,nan,1663096257
+UKR81392,18-Nov-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Orlianka,49.687,37.929,2,0,nan,1693943170
+UKR69664,23-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Mykolaiv,Shevchenkove,46.863,32.191,1,0,nan,1663096255
+UKR85047,17-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Avdiivka,48.139,37.75,2,0,nan,1673376405
+UKR85851,24-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Ozarianivka,48.45,37.955,2,0,nan,1673376407
+UKR55832,15-Apr-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Luhansk,Lysychansk,48.905,38.435,2,0,nan,1650394649
+UKR61841,26-Jun-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Novosilka,47.836,36.689,2,0,nan,1657040028
+UKR79028,29-Oct-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Luhansk,Novoiehorivka,49.335,37.935,2,0,nan,1667924776
+UKR63293,5-Jul-22,2022,1,Battles,Non-state actor overtakes territory,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Spirne,48.808,38.259,1,0,nan,1658249348
+UKR75749,5-Oct-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Mykolaiv,Luch,46.829,32.221,2,0,nan,1665508789
+UKR69954,25-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kherson,Nova Zoria,46.743,32.091,1,0,nan,1663096259
+UKR57228,5-May-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Marinka,47.943,37.505,1,0,nan,1652217210
+UKR68042,12-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Mala Tokmachka,47.532,35.898,1,0,nan,1660674710
+UKR86325,29-Dec-22,2022,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Donetsk,Maiorsk,48.4,37.971,2,0,nan,1673376408
+UKR60409,11-Jun-22,2022,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,Military Forces of Ukraine (2019-),nan,Ukraine,Mykolaiv,Snihurivka,47.07,32.791,2,0,nan,1655837877
+UKR58840,25-May-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kherson,Novooleksandrivka,47.266,33.877,1,0,nan,1657666479
+UKR59512,2-Jun-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Berestove,48.756,38.252,1,0,nan,1654627711
+UKR74632,26-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Novopil,47.807,36.625,2,0,nan,1664907091
+UKR62589,3-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Zaporizhia,Poltavka,47.717,36.489,2,0,nan,1657635468
+UKR75112,30-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),NAF: United Armed Forces of Novorossiya,nan,Ukraine,Donetsk,Donetsk - Kyivskyi,47.986,37.862,1,0,nan,1680636721
+UKR139675,6-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Karasivka,50.267,36.072,1,0,nan,1704833932
+UKR62711,5-Jul-22,2022,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Krasnopillia,48.988,37.413,2,0,nan,1657635467
+UKR54311,20-Mar-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,NAF: United Armed Forces of Novorossiya,Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Horlivka,48.313,38.042,2,0,nan,1680636708
+UKR79507,4-Nov-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Vremivka,47.834,36.815,2,0,nan,1667924776
+UKR62815,6-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,New York,48.332,37.836,1,0,nan,1657635468
+UKR68205,12-Aug-22,2022,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Kharkiv,Rtyshchivka,49.722,36.779,1,0,nan,1663096249
+UKR63683,13-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Mykolaiv,Novohryhorivka,46.88,32.325,2,0,nan,1666188231
+UKR65509,25-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Novomykolaivka,49.391,36.543,1,0,nan,1659462992
+UKR73572,18-Sep-22,2022,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,Military Forces of Ukraine (2019-),nan,Ukraine,Zaporizhia,Poltavka,47.717,36.489,1,0,nan,1686674859
+UKR85012,16-Dec-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Dnipropetrovsk,Nikopol,47.571,34.396,2,0,nan,1673376405
+UKR137831,18-Jun-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Donets,49.508,36.574,1,0,nan,1701813039
+UKR64621,20-Jul-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Ulanove,51.755,34.301,2,0,nan,1658857905
+UKR70603,30-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Mykolaiv,Mykolaiv,46.967,32.018,1,1,nan,1663096246
+UKR67553,9-Aug-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Bazaliyivka,49.828,36.991,1,0,nan,1660674708
+UKR73416,17-Sep-22,2022,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Vilkhuvatka,50.184,37.516,2,0,nan,1664300891
+UKR138477,29-Nov-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Torske,49.017,37.961,2,0,nan,1701813041
+RUS9679,3-Apr-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Ukraine (2019-) Air Force,Military Forces of Russia (2000-),nan,Russia,Bryansk,Sevsk,52.148,34.489,1,0,nan,1681311958
+UKR88498,15-Jan-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kherson,Sadove,46.705,32.822,1,0,nan,1674572556
+RUS12150,25-Sep-23,2023,2,Explosions/Remote violence,Air/drone strike,Unidentified Armed Group (Russia),nan,nan,Russia,Voronezh,Yamnoye,51.793,39.142,1,0,nan,1696959098
+UKR133189,27-Oct-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Kharkiv,Synkivka,49.763,37.705,2,5,nan,1698774976
+UKR92056,11-Feb-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Vilshana,49.793,37.762,2,0,nan,1677001539
+UKR112643,19-Jul-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Bilohiria,47.527,36.0,1,0,nan,1690294196
+UKR91468,4-Feb-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Luhansk,Nevske,49.158,37.975,2,0,nan,1677001538
+UKR104964,24-May-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Chernihiv,Yanzhulivka,52.294,32.56,1,0,nan,1685470246
+UKR95003,6-Mar-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Rozdolivka,48.754,38.081,2,0,nan,1678805153
+UKR141937,25-Dec-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Vovchansk,50.291,36.941,2,0,nan,1704833940
+UKR114190,1-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kherson,Kozatske,46.785,33.338,2,0,nan,1691503823
+UKR138252,27-Nov-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Velyka Pysarivka,50.424,35.48,2,0,nan,1701813040
+UKR107316,10-Jun-23,2023,1,Battles,Armed clash,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Donetsk,Nevelske,48.06,37.575,2,0,nan,1687879967
+UKR87708,10-Jan-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Huliaipole,47.664,36.256,2,0,nan,1673986323
+UKR133273,26-Oct-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Ozarianivka,48.45,37.955,2,0,nan,1698774976
+UKR103655,8-May-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Olhivske,47.736,36.533,2,0,nan,1684857984
+UKR140863,16-Dec-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Zaporizhia,Huliaipole,47.664,36.256,1,0,nan,1704833936
+UKR102452,15-May-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-) Luhansk People's Militia,nan,Ukraine,Luhansk,Luhansk,48.567,39.317,1,0,nan,1684857979
+UKR93263,22-Feb-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Chervone,47.657,36.391,2,0,nan,1677600260
+UKR110249,30-Jun-23,2023,1,Battles,Armed clash,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Donetsk,Vodyane,48.096,37.667,2,0,nan,1689092341
+UKR109156,22-Jun-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Mykolaiv,Ochakiv,46.613,31.55,2,0,nan,1687879969
+RUS13003,8-Dec-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),nan,nan,Russia,Belgorod,Shchetinovka,50.445,36.172,1,0,nan,1702407968
+UKR93027,19-Feb-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Bilohorivka,48.733,38.215,1,0,nan,1677600259
+UKR136652,17-Nov-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Novopil,47.807,36.625,2,0,nan,1700602892
+UKR102897,30-Apr-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Novosilka,47.836,36.689,1,0,nan,1684857981
+UKR100626,21-Apr-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Pivnichne,48.398,37.917,2,0,nan,1682436936
+UKR111374,2-Jul-23,2023,1,Battles,Armed clash,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Luhansk,Makiivka,49.227,37.986,2,2,nan,1693927400
+UKR139176,5-Dec-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Khromove,48.597,37.945,2,0,nan,1702407966
+UKR99777,19-Mar-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Donetsk,Klischiivka,48.528,37.958,2,0,nan,1681851851
+UKR88408,14-Jan-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Novodanylivka,47.524,35.824,2,0,nan,1674572556
+UKR110436,30-Jun-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Zaporizhia,Pyatykhatky,47.508,35.462,2,3,nan,1693927400
+UKR86671,1-Jan-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Soledar,48.697,38.061,2,0,nan,1673376409
+UKR93978,25-Feb-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Popivka,50.497,35.452,2,0,nan,1678206753
+UKR118015,23-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Chernihiv,Mykolaivka,52.242,32.638,1,0,nan,1693927406
+UKR101116,24-Apr-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Yampil,48.932,37.943,1,0,nan,1683052552
+RUS11791,19-Sep-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),nan,nan,Russia,Belgorod,Terebreno,50.717,35.509,1,0,nan,1695751328
+UKR101721,13-May-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Kherson,Kozatske,46.785,33.338,2,0,nan,1684857977
+UKR138501,30-Nov-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Bilohiria,47.527,36.0,1,0,nan,1701813041
+UKR88652,17-Jan-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-) Chechen Battalion of Ramzan Kadyrov,Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Novomykhaylivka,47.854,37.484,2,0,nan,1675191965
+UKR128072,11-Sep-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Vovchansk,50.291,36.941,2,0,nan,1695129378
+UKR103515,7-May-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Leonidivka,48.37,37.801,1,0,nan,1684857983
+UKR93606,2-Mar-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,Civilians (Ukraine),Civilian targeting,Ukraine,Kherson,Kozatske,46.785,33.338,1,0,nan,1678206752
+UKR91073,5-Feb-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Luhansk,Novoselivske,49.523,37.953,2,2,nan,1693927408
+UKR120702,25-Feb-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Kharkiv,Pershotravneve,49.741,37.913,2,1,nan,1694008038
+UKR131767,9-Oct-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Okhrimivka,50.334,37.21,2,0,nan,1697557205
+UKR102487,3-May-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Donetsk,Mykolaivka,48.578,37.797,1,0,nan,1684857980
+UKR104332,12-May-23,2023,1,Battles,Armed clash,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Donetsk,Bohdanivka,48.617,37.896,2,0,nan,1684857986
+UKR123016,28-Apr-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Uspenivka,47.917,37.23,2,0,nan,1694008042
+UKR131366,8-Oct-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Marinka,47.943,37.505,2,0,nan,1697557203
+UKR98818,7-Apr-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Kurdiumivka,48.468,37.957,2,0,nan,1682436937
+UKR110889,5-Jul-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Shakhtarske,47.86,37.004,1,0,nan,1689092343
+UKR142016,26-Dec-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Stepove,48.195,37.678,1,0,nan,1704833940
+UKR112462,15-Jul-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Prechystivka,47.779,37.075,1,0,nan,1690294196
+UKR103300,4-May-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Chernihiv,Yeline,52.023,31.973,2,0,nan,1684857982
+UKR100908,23-Apr-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Bohoiavlenka,47.86,37.214,1,0,nan,1683052551
+UKR97428,26-Mar-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Kharkiv,Vesele,50.166,36.532,2,0,nan,1680620639
+UKR131854,11-Oct-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Novodmytrivka,50.759,35.38,1,0,nan,1697557206
+UKR105710,27-May-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Yehorivka,47.626,35.938,1,0,nan,1686065983
+UKR103996,12-May-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Huliaipole,47.664,36.256,2,0,nan,1684857985
+UKR103351,5-May-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Novomlynsk,49.882,37.735,2,0,nan,1684857983
+UKR93621,1-Mar-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Ukraine (2019-) Air Force,Military Forces of Russia (2000-),nan,Ukraine,Crimea,Yalta,44.496,34.164,2,0,nan,1678206752
+UKR105852,29-May-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Velyka Pysarivka,50.424,35.48,2,0,nan,1686065984
+UKR96665,21-Mar-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Donetsk,Chasiv Yar,48.587,37.832,1,2,nan,1680026112
+UKR108975,21-Jun-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,Military Forces of Ukraine (2019-),nan,Ukraine,Kharkiv,Kyslivka,49.641,37.905,2,2,nan,1693927399
+UKR114378,2-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Veterynarne,50.391,36.195,1,0,nan,1691503823
+UKR89643,24-Jan-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Zaporizhia,Tavriyske,46.692,35.609,1,0,nan,1675191967
+RUS10110,1-Jun-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),nan,nan,Russia,Belgorod,Vyazovoye,50.789,35.498,1,0,nan,1686065981
+UKR131673,7-Oct-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Kyslivka,49.641,37.905,1,0,nan,1697557205
+UKR139085,4-Dec-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Kharkiv,Pishchane,49.656,37.781,1,0,nan,1702407966
+UKR126570,8-Sep-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Kharkiv,Bolohivka,50.055,37.805,2,0,nan,1694528987
+UKR127417,10-Sep-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,Civilians (Ukraine),Civilian targeting,Ukraine,Kyiv City,Kyiv,50.45,30.522,3,0,nan,1695129377
+UKR113649,27-Jul-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Marinka,47.943,37.505,2,0,nan,1690907555
+RUS12515,30-Oct-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Ukraine (2019-) Air Force,nan,nan,Russia,Belgorod,Petrovka,50.365,36.399,1,0,nan,1699385321
+UKR98178,1-Apr-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Avdiivka,48.139,37.75,2,0,nan,1681311959
+RUS11395,2-Sep-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),Civilians (Russia),Civilian targeting,Russia,Belgorod,Urazovo,50.083,38.032,1,1,nan,1694528987
+UKR93952,25-Feb-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Kurakhove,47.984,37.282,1,0,nan,1678206753
+UKR116075,8-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Mykolaiv,Kutsurub,46.653,31.618,1,0,nan,1693927403
+UKR92124,11-Feb-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Tabaivka,49.596,37.875,2,0,nan,1677001539
+UKR134410,1-Nov-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Mali Scherbaky,47.548,35.553,2,0,nan,1699385323
+UKR128770,16-Sep-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Vuhledar,47.779,37.248,2,2,nan,1695751329
+UKR107687,11-Jun-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Vremivka,47.834,36.815,1,0,nan,1687280463
+UKR135409,8-Nov-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Prechystivka,47.779,37.075,2,0,nan,1699988480
+UKR106434,3-Jun-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Predtechyne,48.523,37.812,2,0,nan,1686674857
+UKR106738,6-Jun-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Chuhunivka,50.182,37.601,2,0,nan,1686674858
+UKR127237,6-Sep-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Shcherbaky,47.551,35.582,1,0,nan,1694528988
+UKR128545,22-Sep-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Luhansk,Makiivka,49.227,37.986,2,0,nan,1695751328
+UKR100511,19-Apr-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Zapadne,49.822,37.614,1,0,nan,1682436936
+UKR103078,2-May-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Volfyne,51.243,34.463,2,0,nan,1684857982
+UKR97645,25-Mar-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kherson,Lvove,46.791,33.149,1,0,nan,1680620640
+UKR107596,15-Jun-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Zaporizhia,Preobrazhenka,47.576,35.802,1,1,nan,1687280463
+UKR113656,27-Jul-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Charivne,47.58,36.034,2,0,nan,1690907555
+UKR95580,12-Mar-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Kharkiv,Dvorichna,49.85,37.683,2,0,nan,1679425921
+RUS13218,23-Dec-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),nan,nan,Russia,Belgorod,Nekhoteevka,50.342,36.299,1,0,nan,1704833924
+UKR138571,30-Nov-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Pervomayske,48.097,37.592,2,0,nan,1701813041
+UKR140081,2-Dec-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Ukraine (2019-) Air Force,Military Forces of Russia (2000-),nan,Ukraine,Kharkiv,Nova Tarasivka,49.66,37.984,2,0,nan,1704833934
+RUS12244,11-Oct-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),nan,nan,Russia,Belgorod,Poroz,50.578,35.454,1,0,nan,1697557201
+UKR98721,6-Apr-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Novomarkove,48.671,37.826,2,0,nan,1681311961
+UKR114989,28-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Preobrazhenka,47.576,35.802,1,0,nan,1693927401
+UKR105471,28-May-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Orikhovo-Vasylivka,48.68,37.88,2,0,nan,1686065983
+UKR99068,10-Apr-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Luhansk,Chervonopopivka,49.132,38.153,2,0,nan,1681851848
+UKR137078,19-Nov-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Prechystivka,47.779,37.075,1,0,nan,1701200413
+UKR90124,24-Jan-23,2023,1,Battles,Armed clash,Military Forces of Ukraine (2019-) Special Forces,Military Forces of Russia (2000-),nan,Ukraine,Kherson,Nova Kakhovka,46.754,33.349,2,0,nan,1675798463
+UKR95972,14-Mar-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Romashkove,52.15,33.957,2,0,nan,1679425923
+UKR115503,26-Aug-23,2023,1,Battles,Armed clash,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Donetsk,Kurdiumivka,48.468,37.957,2,0,nan,1693927402
+UKR112371,16-Jul-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Kherson,Zmiivka,46.865,33.584,1,1,nan,1690294196
+UKR117071,16-Aug-23,2023,1,Battles,Armed clash,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Donetsk,Berkhivka,48.647,37.966,2,0,nan,1693927405
+UKR136316,14-Nov-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Pobieda,47.916,37.463,1,0,nan,1700602891
+UKR86776,1-Jan-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Mala Vovcha,50.347,37.267,2,0,nan,1673376410
+UKR94721,8-Mar-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Marinka,47.943,37.505,2,0,nan,1678805152
+UKR116385,10-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Kharkiv,Podoly,49.684,37.676,1,1,nan,1693927403
+UKR116885,14-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Petropavlivka,49.716,37.717,2,0,nan,1693927404
+UKR94391,2-Mar-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Rozdolivka,48.754,38.081,2,0,nan,1678206755
+UKR92054,11-Feb-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Luhansk,Novoselivske,49.523,37.953,2,0,nan,1677001539
+UKR90416,28-Jan-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Yunakivka,51.121,35.034,2,0,nan,1675798464
+UKR129892,24-Sep-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kherson,Tokarivka,46.75,32.951,1,0,nan,1696369117
+UKR114855,26-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kherson,Yantarne,46.576,32.442,1,0,nan,1693927401
+UKR108240,9-Jun-23,2023,1,Battles,Armed clash,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Kharkiv,Novomlynsk,49.882,37.735,2,0,nan,1687879967
+UKR123935,27-May-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,Military Forces of Ukraine (2019-),nan,Ukraine,Luhansk,Novoselivske,49.523,37.953,2,2,nan,1694008044
+UKR104702,22-May-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Vodyane,48.096,37.667,2,0,nan,1685470245
+UKR142542,30-Dec-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Urozhaine,47.753,36.818,2,0,nan,1704833943
+UKR131273,13-Oct-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Kherson,Olhivka,46.792,33.199,2,0,nan,1697557202
+UKR94978,6-Mar-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Huliaipole,47.664,36.256,2,0,nan,1678805153
+UKR88182,20-Jan-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Rozdolivka,48.754,38.081,2,0,nan,1674572556
+UKR133862,21-Oct-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-) Donetsk People's Militia,nan,Ukraine,Donetsk,Donetsk - Petrovskyi,47.95,37.614,1,0,nan,1698774978
+UKR105444,18-May-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Kharkiv,Tymkivka,49.699,37.883,2,0,nan,1686065983
+UKR88282,18-Jan-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Donetsk,Avdiivka,48.139,37.75,1,0,nan,1674572556
+UKR132593,14-Oct-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Lyman Pershyi,49.791,37.706,1,0,nan,1698180619
+UKR104595,20-May-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Zaliznychne,47.645,36.17,1,0,nan,1685470245
+UKR88018,11-Jan-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-) Donetsk People's Militia,nan,Ukraine,Donetsk,Staromykhaylivka,47.991,37.586,1,0,nan,1673986324
+UKR103813,10-May-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Heorhiivka,47.964,37.438,1,0,nan,1684857984
+UKR142246,28-Dec-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Zaporizhia,Poltavka,47.717,36.489,1,0,nan,1704833942
+UKR139268,6-Dec-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Berdychi,48.194,37.641,2,0,nan,1702407966
+UKR100490,19-Apr-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Shalyhyne,51.572,34.122,2,0,nan,1682436936
+UKR138354,28-Nov-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Starytsia,50.24,36.793,2,0,nan,1701813040
+UKR142007,26-Dec-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kherson,Sadove,46.705,32.822,1,0,nan,1704833940
+UKR106113,2-Jun-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Kozacha Lopan,50.332,36.194,2,0,nan,1686065984
+UKR101224,25-Apr-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kherson,Vysuntsi,46.725,32.583,2,0,nan,1683052553
+UKR123265,14-May-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Kryva Luka,48.874,37.905,2,0,nan,1694008043
+UKR138412,29-Nov-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Kherson,Kindiika,46.674,32.686,1,1,nan,1701813040
+RUS13134,18-Dec-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Ukraine (2019-) Air Force,nan,nan,Russia,Belgorod,Krasnyi Khutor,50.371,36.254,1,0,nan,1704833923
+UKR131329,13-Oct-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Kharkiv,Kyslivka,49.641,37.905,2,0,nan,1697557202
+UKR126497,3-Sep-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Kharkiv,Strilecha,50.301,36.399,2,0,nan,1694528987
+UKR97475,30-Mar-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Luhansk,Kuzmine,49.006,38.15,2,0,nan,1680620639
+UKR90740,2-Feb-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Zaporizhia,Melitopol,46.849,35.365,1,0,nan,1675798465
+UKR104473,20-May-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Bohdanivka,48.617,37.896,2,3,nan,1693927399
+UKR104123,22-Apr-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Zaporizhia,Myrne,47.577,36.116,2,0,nan,1684857985
+UKR115693,5-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Huliaipole,47.664,36.256,1,0,nan,1693927402
+RUS11345,3-Sep-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Ukraine (2019-) Air Force,nan,nan,Russia,Kursk,Kurchatov,51.656,35.677,1,0,nan,1694528987
+UKR121656,25-Mar-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,Military Forces of Ukraine (2019-),nan,Ukraine,Kharkiv,Stepova Novoselivka,49.661,37.862,2,2,nan,1694008040
+UKR127928,9-Sep-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Huliaipole,47.664,36.256,1,0,nan,1695129378
+UKR98456,3-Apr-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Olhivske,47.736,36.533,2,0,nan,1681311960
+UKR91603,10-Feb-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Seredyna-Buda,52.189,34.036,2,0,nan,1676403731
+UKR91637,9-Feb-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Basivka,51.186,35.088,2,0,nan,1676403731
+UKR94188,28-Feb-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kherson,Mykolaivka,47.497,33.391,2,0,nan,1678206754
+UKR114594,4-Aug-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Zaporizhia,Orikhiv,47.567,35.786,2,0,nan,1691503824
+UKR103062,2-May-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Rivne,51.313,34.217,2,0,nan,1684857982
+UKR132924,18-Oct-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-) Donetsk People's Militia,nan,Ukraine,Donetsk,Donetsk - Kyivskyi,47.986,37.862,1,0,nan,1698180620
+UKR111410,7-Jul-23,2023,1,Battles,Armed clash,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Luhansk,Krasnorichenske,49.216,38.204,2,0,nan,1689699424
+UKR142329,29-Dec-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,Civilians (Ukraine),Civilian targeting,Ukraine,Kharkiv,Kharkiv,49.981,36.253,2,3,nan,1704833942
+RUS11274,25-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),nan,nan,Russia,Belgorod,Nekhoteevka,50.342,36.299,1,0,nan,1693927398
+RUS11548,5-Sep-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),nan,nan,Russia,Belgorod,Kolotilovka,50.813,35.434,1,0,nan,1695129377
+UKR135994,11-Nov-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Donetsk,Toretsk,48.393,37.845,1,2,nan,1700602890
+UKR139526,8-Dec-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Dnipropetrovsk,Mezhyrich,48.562,35.771,2,0,nan,1702407967
+UKR117725,20-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Veterynarne,50.391,36.195,1,0,nan,1693927406
+UKR89318,21-Jan-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Kherson,Sadove,46.705,32.822,1,0,nan,1675191966
+UKR140735,15-Dec-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-) Donetsk People's Militia,nan,Ukraine,Donetsk,Donetsk - Kyivskyi,47.986,37.862,1,0,nan,1704833936
+UKR95601,13-Mar-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Bakhmut,48.596,38.0,2,0,nan,1680026111
+UKR138145,26-Nov-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Sumy,Seredyna-Buda,52.189,34.036,1,0,nan,1701813040
+UKR128728,20-Sep-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Kherson,Komyshany,46.636,32.503,1,0,nan,1695751329
+UKR123589,4-May-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Kalynivka,48.611,37.862,2,0,nan,1694008044
+UKR92222,13-Feb-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Dnipropetrovsk,Illinka,47.594,34.665,2,0,nan,1677001539
+UKR99671,13-Apr-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Ternova,50.185,36.676,2,0,nan,1681851851
+UKR101549,28-Apr-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Fyholivka,49.899,37.702,2,0,nan,1683052554
+UKR87478,12-Jan-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Mykolaiv,Ochakiv,46.613,31.55,1,0,nan,1673986322
+UKR92664,15-Feb-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-) Donetsk People's Militia,nan,Ukraine,Donetsk,Horlivka,48.313,38.042,1,0,nan,1677001540
+UKR98396,2-Apr-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Orikhovo-Vasylivka,48.68,37.88,2,0,nan,1681851848
+UKR109433,30-Jun-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Luhansk,Bilohorivka,48.926,38.247,2,0,nan,1689092341
+UKR115565,27-Aug-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-) Air Force,Military Forces of Ukraine (2019-) Air Force,nan,Ukraine,Zaporizhia,Novodanylivka,47.524,35.824,2,0,nan,1693927402
+UKR136290,14-Nov-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Marinka,47.943,37.505,2,0,nan,1700602891
+UKR126416,24-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Kherson,Kherson,46.656,32.618,2,10,nan,1694008049
+UKR89569,24-Jan-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Chernihiv,Huta-Studenetska,52.003,32.186,2,0,nan,1675191967
+RUS10375,18-Jun-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),nan,nan,Russia,Kursk,Tyotkino,51.273,34.284,1,0,nan,1687879966
+UKR124428,7-Jun-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-) Air Force,nan,Ukraine,Zaporizhia,Liubytske,47.769,35.942,2,0,nan,1694008045
+UKR117765,21-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-) Donetsk People's Militia,nan,Ukraine,Donetsk,Horlivka,48.313,38.042,1,0,nan,1693927406
+UKR140826,16-Dec-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Baranivka,51.922,34.185,1,0,nan,1704833936
+RUS13448,11-Nov-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Ukraine (2019-) Air Force,Military Forces of Russia (2000-),nan,Russia,Belgorod,Nekhoteevka,50.342,36.299,2,0,nan,1704833931
+UKR112185,17-Jul-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Bohdanivka,48.617,37.896,2,0,nan,1690294196
+UKR88046,5-Jan-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),nan,nan,Ukraine,Kherson,Oleshky,46.618,32.719,1,0,nan,1673986324
+UKR88801,19-Jan-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Krokhmalne,49.574,37.916,2,0,nan,1674572557
+UKR96049,15-Mar-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Starykove,51.621,34.147,2,0,nan,1679425923
+UKR116147,9-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Bilohiria,47.527,36.0,1,0,nan,1693927403
+UKR115067,29-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Riasne,50.69,35.394,2,0,nan,1693927401
+UKR119319,12-Jan-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Vyimka,48.804,38.147,2,0,nan,1694008036
+UKR128237,14-Sep-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kherson,Zmiivka,46.865,33.584,2,0,nan,1695129378
+UKR112049,20-Jul-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,Civilians (Ukraine),Civilian targeting,Ukraine,Odesa,Odesa,46.464,30.739,1,1,local administrators,1690294195
+UKR108604,18-Jun-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Sumy,Velyka Pysarivka,50.424,35.48,1,0,nan,1687879968
+UKR133983,30-Oct-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Kherson,Kherson,46.656,32.618,1,0,nan,1699385322
+UKR117069,16-Aug-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Avdiivka,48.139,37.75,2,0,nan,1693927405
+UKR142255,28-Dec-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Selydove,48.148,37.298,1,0,nan,1704833942
+UKR119578,25-Jan-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Luhansk,Novoselivske,49.523,37.953,2,0,nan,1694008036
+UKR89096,24-Jan-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Krasnohorivka,48.207,37.724,2,0,nan,1675191966
+UKR89390,22-Jan-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Mykilske,47.751,37.299,2,0,nan,1675191966
+UKR104725,22-May-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kherson,Kozatske,46.785,33.338,2,0,nan,1685470246
+UKR141908,25-Dec-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Riasne,50.69,35.394,2,0,nan,1704833940
+UKR101599,28-Apr-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Pobieda,47.916,37.463,2,0,nan,1683052555
+UKR105710,27-May-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Yehorivka,47.626,35.938,1,0,nan,1686065983
+UKR115010,28-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Zolota Nyva,47.794,36.99,2,0,nan,1693927401
+UKR87598,8-Jan-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Ivanivka,49.661,37.892,2,0,nan,1673986323
+UKR140086,9-Dec-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Avdiivka,48.139,37.75,2,0,nan,1704833934
+UKR107880,14-Jun-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Hryhorivka,48.642,37.859,1,0,nan,1687280463
+UKR116426,10-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Zaporizhia,Zaporizhia,47.848,35.16,1,1,nan,1693927403
+UKR140843,16-Dec-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Chervona Zoria,50.407,36.13,1,0,nan,1704833936
+UKR101382,26-Apr-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Zelene,50.219,36.583,1,0,nan,1683052554
+UKR123475,29-Apr-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Kramatorsk,48.731,37.582,2,0,nan,1694008043
+UKR91944,5-Feb-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Blahodatne,48.692,38.013,2,0,nan,1677001538
+UKR139571,8-Dec-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,Civilians (Ukraine),Civilian targeting,Ukraine,Kharkiv,Tsaredarivka,48.938,36.223,1,0,nan,1702407967
+UKR87307,2-Jan-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Luhansk,Bilohorivka,48.926,38.247,2,0,nan,1673986322
+UKR108193,13-Jun-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-) Donetsk People's Militia,nan,Ukraine,Donetsk,Oleksandrivka,47.922,37.571,1,0,nan,1687280464
+UKR119889,10-Feb-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Novoukrainka,47.837,37.105,2,0,nan,1694008037
+RUS9562,3-Mar-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),nan,nan,Russia,Belgorod,Ustinka,50.338,36.494,1,0,nan,1678206751
+UKR112742,20-Jul-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Shcherbaky,47.551,35.582,1,0,nan,1690294196
+UKR131301,4-Sep-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Ukraine (2019-) Air Force,Military Forces of Russia (2000-),nan,Ukraine,Luhansk,Nyrkove,48.738,38.312,2,0,nan,1697557202
+UKR86914,2-Jan-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Yakovlivka,48.706,38.149,2,0,nan,1673376410
+UKR115782,5-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Verkhnokamianske,48.859,38.196,1,0,nan,1693927402
+UKR113238,24-Jul-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,New York,48.332,37.836,2,0,nan,1690907554
+UKR113719,28-Jul-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Ukraine (2019-) Air Force,Military Forces of Russia (2000-),nan,Ukraine,Donetsk,Shakhtarsk,48.057,38.438,1,0,nan,1690907555
+UKR131446,9-Oct-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Kurdiumivka,48.468,37.957,2,4,nan,1697557204
+UKR108545,18-Jun-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Odnorobivka,50.416,35.862,1,0,nan,1687879967
+UKR130942,4-Oct-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Pyatykhatky,47.508,35.462,2,0,nan,1696959100
+UKR86554,4-Jan-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Dnipropetrovsk,Nikopol,47.571,34.396,1,1,nan,1673376409
+UKR99895,16-Apr-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,Military Forces of Ukraine (2019-),nan,Ukraine,Zaporizhia,Mala Tokmachka,47.532,35.898,2,2,nan,1693927409
+UKR89486,23-Jan-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Novodanylivka,47.524,35.824,2,0,nan,1675191967
+UKR97661,25-Mar-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Kamianske,47.542,35.366,1,0,nan,1680620640
+UKR140550,13-Dec-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Bohdanivka,48.617,37.896,2,0,nan,1704833935
+UKR139526,8-Dec-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Dnipropetrovsk,Mezhyrich,48.562,35.771,2,0,nan,1702407967
+UKR90708,31-Jan-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Rozhkovychi,52.105,34.081,2,0,nan,1675798465
+UKR102835,29-Apr-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Vovchansk,50.291,36.941,1,0,nan,1684857981
+UKR99252,9-Apr-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Markove,48.654,37.791,1,0,nan,1681851849
+UKR108904,21-Jun-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Ivanivske,48.572,37.917,2,0,nan,1687879968
+UKR92189,12-Feb-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Novoandriivka,47.562,35.697,1,0,nan,1677001539
+UKR104129,28-Apr-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Kherson,Korsunka,46.76,33.197,1,0,nan,1684857985
+UKR136374,15-Nov-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-) Donetsk People's Militia,nan,Ukraine,Donetsk,Donetsk - Kirovskyi,47.968,37.548,1,0,nan,1700602891
+UKR109761,24-Jun-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Keramik,48.253,37.683,1,0,nan,1688497371
+UKR130007,26-Sep-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Vovchansk,50.291,36.941,2,0,nan,1696369118
+UKR109796,24-Jun-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Serebrianka,48.921,38.128,1,0,nan,1688497371
+UKR134228,28-Oct-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Charivne,47.58,36.034,1,0,nan,1699385323
+UKR139439,7-Dec-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Pervomayske,48.097,37.592,2,0,nan,1702407967
+UKR141758,24-Dec-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Ivanivka,49.661,37.892,1,0,nan,1704833939
+UKR123274,15-May-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Zaporizhia,Chervone,47.657,36.391,2,2,nan,1694008043
+UKR112926,17-Jul-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Zaporizhia,Robotyne,47.448,35.837,2,0,nan,1690907553
+UKR91385,5-Feb-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Terny,49.097,37.963,1,0,nan,1676403731
+UKR117402,18-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Keramik,48.253,37.683,2,0,nan,1693927405
+UKR96902,19-Mar-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Hlyboke,50.255,36.425,2,0,nan,1680026113
+UKR129358,26-Sep-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,Police Forces of Ukraine (2019-),nan,Ukraine,Kherson,Beryslav,46.842,33.428,2,0,nan,1696369115
+UKR138158,26-Nov-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Verkhnokamianske,48.859,38.196,1,0,nan,1701813040
+UKR140551,13-Dec-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Brusky,51.407,34.203,2,0,nan,1704833935
+UKR109466,18-Jun-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Stupochky,48.536,37.827,2,0,nan,1688497370
+UKR130094,28-Sep-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Chernihiv,Kliusy,52.077,31.929,2,0,nan,1696369118
+UKR114047,30-Jul-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Vuhledar,47.779,37.248,1,0,nan,1691503822
+UKR141847,24-Dec-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Yelyzavetivka,47.886,37.302,1,0,nan,1704833940
+UKR116388,10-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Predtechyne,48.523,37.812,2,0,nan,1693927403
+RUS10881,31-Jul-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),nan,nan,Russia,Belgorod,Grafovka,50.909,35.434,2,0,nan,1691503822
+UKR132803,18-Oct-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Volfyne,51.243,34.463,1,0,nan,1698180620
+UKR115858,6-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Mali Scherbaky,47.548,35.553,1,0,nan,1693927403
+UKR125886,31-Jul-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Berestove,48.756,38.252,2,1,nan,1694008048
+UKR115661,5-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Bila Hora,48.484,37.869,1,0,nan,1693927402
+UKR94638,1-Mar-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Bohdanivka,48.617,37.896,2,0,nan,1678805152
+UKR94400,2-Mar-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Stetskivka,51.01,34.777,2,0,nan,1678206755
+UKR115690,5-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Heorhiivka,47.964,37.438,1,0,nan,1693927402
+UKR120858,5-Mar-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Yampolivka,49.071,37.955,2,5,nan,1694008038
+UKR89977,27-Jan-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kherson,Tiahynka,46.781,33.056,2,0,nan,1675191968
+UKR107031,8-Jun-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Hatyshche,50.3,36.867,2,0,nan,1686674858
+UKR113441,25-Jul-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Donetsk,Zolota Nyva,47.794,36.99,2,0,nan,1690907555
+UKR116954,15-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-) Donetsk People's Militia,nan,Ukraine,Donetsk,Donetsk - Kyivskyi,47.986,37.862,1,0,nan,1693927404
+UKR115172,30-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Poltavka,47.717,36.489,1,0,nan,1693927401
+UKR132064,10-Oct-23,2023,2,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,Military Forces of Ukraine (2019-),nan,Ukraine,Zhytomyr,Zhytomyr,50.265,28.677,2,0,nan,1698180618
+UKR118229,24-Aug-23,2023,1,Battles,Armed clash,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-),nan,Ukraine,Donetsk,Staromykhaylivka,47.991,37.586,2,3,nan,1693927407
+UKR132726,17-Oct-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kherson,Odradokamianka,46.788,33.302,2,0,nan,1698180620
+UKR129018,19-Sep-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Kotliarivka,49.631,37.906,2,0,nan,1695751331
+UKR97812,27-Mar-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Mali Scherbaky,47.548,35.553,1,0,nan,1680620640
+UKR128773,19-Sep-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Novodonetske,47.755,36.96,2,2,nan,1695751329
+UKR106932,7-Jun-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Novovasylivka,52.328,33.454,2,0,nan,1686674858
+UKR119924,4-Feb-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Yampolivka,49.071,37.955,2,2,nan,1694008037
+UKR88950,14-Jan-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-) Donetsk People's Militia,nan,Ukraine,Donetsk,Makiivka,48.046,37.969,2,0,nan,1674572558
+UKR133238,24-Oct-23,2023,1,Battles,Armed clash,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Zaporizhia,Kopani,47.457,35.726,2,0,nan,1698774976
+UKR88446,14-Jan-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Zaporizhia,47.848,35.16,1,0,nan,1674572556
+UKR114339,2-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Oleksandropil,48.282,37.775,1,0,nan,1691503823
+UKR103840,10-May-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Donetsk,Pervomayske,48.097,37.592,1,0,nan,1684857984
+UKR98882,2-Apr-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),Military Forces of Russia (2000-) Donetsk People's Militia,nan,Ukraine,Donetsk,Donetsk - Kuibyshivskyi,48.023,37.728,1,0,nan,1681311961
+UKR116590,12-Aug-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Kharkiv,Huriiv Kozachok,50.42,35.966,2,0,nan,1693927404
+UKR110809,4-Jul-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kharkiv,Zapadne,49.822,37.614,2,0,nan,1689092342
+UKR127845,11-Sep-23,2023,1,Explosions/Remote violence,Remote explosive/landmine/IED,Military Forces of Russia (2000-),Civilians (Ukraine),Civilian targeting,Ukraine,Kharkiv,Snizhkivka,49.159,37.236,1,0,nan,1695129378
+UKR87017,4-Jan-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Zaporizhia,Novoandriivka,47.562,35.697,1,0,nan,1673376410
+RUS12092,3-Oct-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Ukraine (2019-),nan,nan,Russia,Kursk,Tyotkino,51.273,34.284,1,0,nan,1696959098
+UKR130389,6-Oct-23,2023,1,Explosions/Remote violence,Air/drone strike,Military Forces of Russia (2000-) Air Force,nan,nan,Ukraine,Donetsk,Spirne,48.808,38.259,2,0,nan,1696959099
+UKR114289,2-Aug-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kherson,Kizomys,46.563,32.348,1,0,nan,1691503823
+UKR97930,29-Mar-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Kherson,Rozlyv,46.623,32.377,2,0,nan,1680620641
+UKR123009,28-Apr-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),Military Forces of Ukraine (2019-),nan,Ukraine,Donetsk,Novopil,47.807,36.625,2,0,nan,1694008042
+UKR99097,8-Apr-23,2023,1,Explosions/Remote violence,Shelling/artillery/missile attack,Military Forces of Russia (2000-),nan,nan,Ukraine,Sumy,Baranivka,51.922,34.185,1,0,nan,1681851848

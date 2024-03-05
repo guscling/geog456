@@ -11,7 +11,7 @@
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
     integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
     crossorigin=""></script>
-    <script src='./ACLED_3_JSON.js'></script>
+    <script src='./ACLED_REDUCED-2.js'></script>
 </head>
 <style>
     #map { 
@@ -20,31 +20,190 @@
          }
 </style>
 <body>
-    <input id = "monthSlider" type="range" name="month" min="0" max="24" oninput="moveSlider(this.value)" value="0">
+    <h1>Map of Battles and Remote Attacks in Ukraine and Russia since the Invasion of Ukraine</h1>
+    <br>
+    The original dataset I've been using is over 80,000 datapoints, already reduced from over 300,000. The geojson was far too large to load on Leaflet, so I randomly selected 300 datapoints from 2022 and 300 from 2023 and 2024. So the data doesn't exactly show a real trend but it's what I had to do to get this to work.
+    <h2 id="date"></h2>
+    <input id = "monthSlider" type="range" name="month" min="0" max="22" oninput="moveSlider(this.value)" value="0">
+    <script> window.onload = function() {moveSlider(0)}</script>
     <br>
     <div id="map"></div>
 </body>
 <script>
+
     var map = L.map('map').setView([50.4504, 30.5245], 5)
     L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
         maxZoom: 19,
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
 
-    var mydata = L.geoJSON(data).addTo(map);
-    mydata.addData(data);
     var mydataOptions = {
         radius: 6,
-        fillColor: "#56a0d3",
+        fillColor: "red",
         color: "#000",
         weight: 1,
-        opacity: .5,
-        fillOpacity: 0.8
+        opacity: .7,
+        fillOpacity: 0.5,
         };
     
     var add_json = L.geoJson(data, {
         pointToLayer: function(feature,latlng){
-            return L.circleMarker(latlng, mydataOptions);
+            return L.circleMarker
+            (latlng, mydataOptions);
         }
         }).addTo(map);
+    
+    var datesArray = []
+
+    //Help from chat gpt with setting this up
+    add_json.eachLayer(function (layer) {
+        var eventDate = layer.feature.properties.EVENT_DATE;
+        var eventMonth = eventDate.split('-')[1];
+        var eventYear = eventDate.split('-')[2];
+
+        var correspondingFeature = data.features.find(function(feature) {
+            return feature.properties.EVENT_DATE === eventDate;
+        });
+        if (correspondingFeature && correspondingFeature.properties.slider === undefined){
+            if(eventMonth == 'Feb' && eventYear == '22') {
+                correspondingFeature.properties.slider = 0;
+                datesArray.push(eventMonth + " " + eventYear);
+                return;
+            }
+            else if(eventMonth == 'Mar' && eventYear == '22') {
+                correspondingFeature.properties.slider = 1;
+                datesArray.push(eventMonth + " " + eventYear);
+                return;
+            }
+            else if(eventMonth == 'Apr' && eventYear == '22') {
+                correspondingFeature.properties.slider = 2;
+                datesArray.push(eventMonth + " " + eventYear);
+                return;
+            }
+            else if(eventMonth == 'May' && eventYear == '22') {
+                correspondingFeature.properties.slider = 3;
+                datesArray.push(eventMonth + " " + eventYear);
+                return;
+            }
+            else if(eventMonth == 'Jun' && eventYear == '22') {
+                correspondingFeature.properties.slider = 4;
+                datesArray.push(eventMonth + " " + eventYear);
+                return;
+            }
+            else if(eventMonth == 'Jul' && eventYear == '22') {
+                correspondingFeature.properties.slider = 5;
+                datesArray.push(eventMonth + " " + eventYear);
+                return;
+            }
+            else if(eventMonth == 'Aug' && eventYear == '22') {
+                correspondingFeature.properties.slider = 6;
+                datesArray.push(eventMonth + " " + eventYear);
+                return;
+            }
+            else if(eventMonth == 'Sep' && eventYear == '22') {
+                correspondingFeature.properties.slider = 7;
+                datesArray.push(eventMonth + " " + eventYear);
+                return;
+            }
+            else if(eventMonth == 'Oct' && eventYear == '22') {
+                correspondingFeature.properties.slider = 8;
+                datesArray.push(eventMonth + " " + eventYear);
+                return;
+            }
+            else if(eventMonth == 'Nov' && eventYear == '22') {
+                correspondingFeature.properties.slider = 9;
+                datesArray.push(eventMonth + " " + eventYear);
+                return;
+            }
+            else if(eventMonth == 'Dec' && eventYear == '22') {
+                correspondingFeature.properties.slider = 10;
+                datesArray.push(eventMonth + " " + eventYear);
+                return;
+            }
+            else if(eventMonth == 'Jan' && eventYear == '23') {
+                correspondingFeature.properties.slider = 11;
+                datesArray.push(eventMonth + " " + eventYear);
+                return;
+            }
+            else if(eventMonth == 'Feb' && eventYear == '23') {
+                correspondingFeature.properties.slider = 12;
+                datesArray.push(eventMonth + " " + eventYear);
+                return;
+            }
+            else if(eventMonth == 'Mar' && eventYear == '23') {
+                correspondingFeature.properties.slider = 13;
+                datesArray.push(eventMonth + " " + eventYear);
+                return;
+            }
+            else if(eventMonth == 'Apr' && eventYear == '23') {
+                correspondingFeature.properties.slider = 14;
+                datesArray.push(eventMonth + " " + eventYear);
+                return;
+            }
+            else if(eventMonth == 'May' && eventYear == '23') {
+                correspondingFeature.properties.slider = 15;
+                datesArray.push(eventMonth + " " + eventYear);
+                return;
+            }
+            else if(eventMonth == 'Jun' && eventYear == '23') {
+                correspondingFeature.properties.slider = 16;
+                datesArray.push(eventMonth + " " + eventYear);
+                return;
+            }
+            else if(eventMonth == 'Jul' && eventYear == '23') {
+                correspondingFeature.properties.slider = 17;
+                datesArray.push(eventMonth + " " + eventYear);
+                return;
+            }
+            else if(eventMonth == 'Aug' && eventYear == '23') {
+                correspondingFeature.properties.slider = 18;
+                datesArray.push(eventMonth + " " + eventYear);
+                return;
+            }
+            else if(eventMonth == 'Sep' && eventYear == '23') {
+                correspondingFeature.properties.slider = 19;
+                datesArray.push(eventMonth + " " + eventYear);
+                return;
+            }
+            else if(eventMonth == 'Oct' && eventYear == '23') {
+                correspondingFeature.properties.slider = 20;
+                datesArray.push(eventMonth + " " + eventYear);
+                return;
+            }
+            else if(eventMonth == 'Nov' && eventYear == '23') {
+                correspondingFeature.properties.slider = 21;
+                datesArray.push(eventMonth + " " + eventYear);
+                return;
+            }
+            else if(eventMonth == 'Dec' && eventYear == '23') {
+                correspondingFeature.properties.slider = 22;
+                datesArray.push(eventMonth + " " + eventYear);
+                return;
+            }
+        }
+    });
+
+    var uniqueDatesArray = [...new Set(datesArray)];
+
+    function moveSlider(value) {
+        map.removeLayer(add_json);
+
+        add_json.eachLayer(function (layer) {
+            var sliderValue = layer.feature.properties.slider;
+        document.getElementById('date').innerHTML = uniqueDatesArray[value]
+
+
+        // Set marker color based on 'slider' property
+        if (sliderValue == value) {
+            layer.setStyle({ fillColor: "red"});
+            map.addLayer(add_json);
+            layer.bringToFront();
+
+        } else {
+            layer.setStyle({ fillColor: "#ADD8E6"});
+            map.addLayer(add_json);
+        }
+    });
+}
+
 </script>
 </html>
