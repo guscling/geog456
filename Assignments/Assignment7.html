@@ -22,7 +22,7 @@
 <body>
     <h1>Map of Battles and Remote Attacks in Ukraine and Russia since the Invasion of Ukraine</h1>
     <br>
-    The original dataset I've been using is over 80,000 datapoints, already reduced from over 300,000. The geojson was far too large to load on Leaflet, so I randomly selected 300 datapoints from 2022 and 300 from 2023 and 2024. So the data doesn't exactly show a real trend but it's what I had to do to get this to work.
+    The original dataset I've been using is over 80,000 datapoints, already reduced from over 300,000. The geojson was far too large to load on Leaflet, so I randomly selected 300 datapoints from 2022 and 300 from 2023 and 2024. 
     <h2 id="date"></h2>
     <input id = "monthSlider" type="range" name="month" min="0" max="22" oninput="moveSlider(this.value)" value="0">
     <script> window.onload = function() {moveSlider(0)}</script>
