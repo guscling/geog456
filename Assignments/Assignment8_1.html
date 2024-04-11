@@ -7,36 +7,39 @@
     <title>Assignment8_1</title>
 </head>
     <style>
-        .image_center_text {
-            display: inline-block;
+        .images_center_text {
+            display: flex;
             text-align: center;
             margin: 10px;
+            width: 33.33%;
+            padding: 5px
         }
-
-        .image_center_text img {
+        .images_center_text img {
             width: 500px;
             height: 300px;
-            display: block;
-            margin: 0 auto 5px;
+            padding: 10px;
+        }
+        .images {
+            flex: 33.33%;
+            padding: 5px;
         }
     </style>
    
 <body>
     <h1>Downtown Raleigh NAIP Imagry</h1>
-
-    <div class="image_center_text">   
-        <img src="./2012_2.jpg">
-        <p>2012</p>
-    </div> 
-
-    <div class="image_center_text">   
-        <img src="./2016_2.jpg">
-        <p>2016</p>
-    </div> 
-
-    <div class="image_center_text">   
-        <img src="./2022_2.jpg">
-        <p>2022</p>
+    <div class="images_center_text">
+        <div class ="image">
+            <img src="./2012_2.jpg">
+            <p>2012</p>
+        </div>   
+        <div class="image">
+            <img src="./2016_2.jpg">
+            <p>2016</p>
+        </div>  
+        <div class="image">
+            <img src="./2022_2.jpg">
+            <p>2022</p>
+        </div>  
     </div> 
 </body>
 </html>
