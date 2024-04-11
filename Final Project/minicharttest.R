@@ -28,7 +28,7 @@ tilesURL <- "http://server.arcgisonline.com/ArcGIS/rest/services/Canvas/World_Li
 basemap <- leaflet(width = "100%", height = "400px") %>%
   addTiles(tilesURL)
 
-colors <- c("red", "blue")
+colors <- c("#4fc13c", "#cccccc")
 
 minichart <- basemap %>%
   addMinicharts(

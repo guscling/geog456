@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment8_2</title>
+
+    <style>
+        body {
+            height:2000px
+        }
+        img { 
+            float: left;
+            position: fixed;
+            top: 120px;
+        }
+        .sliderContainer {
+            position: fixed;
+            top: 90px;
+        }
+        h1 {
+            position: fixed;
+            top:0px;
+       }
+        h3 {
+            position: fixed;
+            top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Downtown Raleigh in 2012 vs 2022</h1>
+    <h3>Move slider or scroll to shift from 2012 NAID image to 2022 NAID image</h3>
+
+    <div class="sliderContainer">
+        <input type="range" min="0" max="1" step="0.01" value="0" class="slider" id="opacitySlider">
+    </div>
+    <br>
+    <div class="containerdiv">
+        <img id="image2012" class="image" border="0" src="./2022_2.jpg" height="500" width="auto">
+        <img id="image2022" class="image" border="0" src="./2012_2.jpg" height="500" width="auto">
+    </div>
+    <script>
+        const slider = document.getElementById('opacitySlider');
+        const image2022 = document.querySelector('#image2022');
+
+        slider.addEventListener('input', () => {
+            const opacityValue = slider.value;
+            newOpacity = 1 - opacityValue;
+            image2022.style.opacity = newOpacity;
+        });
+
+        window.addEventListener('scroll', () => {
+            const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+            const opacityValue = window.scrollY / maxScroll;
+            newOpacity = 1 - opacityValue;
+            image2022.style.opacity = newOpacity;
+    });
+
+    </script>
+    <div id="heightDiv"></div>
+    </body>
+</html>

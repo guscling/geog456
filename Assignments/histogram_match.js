@@ -1,0 +1,39 @@
+var lookup = function(sourceHist, targetHist) {
+    // Split the histograms by column and normalize the counts.
+    var sourceValues = sourceHist.slice(1, 0, 1).project([0])
+    var sourceCounts = sourceHist.slice(1, 1, 2).project([0])
+    sourceCounts = sourceCounts.divide(sourceCounts.get([-1]))
+  
+    var targetValues = targetHist.slice(1, 0, 1).project([0])
+    var targetCounts = targetHist.slice(1, 1, 2).project([0])
+    targetCounts = targetCounts.divide(targetCounts.get([-1]))
+  
+    // Find first position in target where targetCount >= srcCount[i], for each i.
+    var lookup = sourceCounts.toList().map(function(n) {
+      var index = targetCounts.gte(n).argmax()
+      return targetValues.get(index)
+    })
+    return {x: sourceValues.toList(), y: lookup}
+  }
+
+  // Make the histogram of sourceImg match targetImg.
+var histogramMatch = function(sourceImg, targetImg) {
+    var geom = sourceImg.geometry();
+    var args = {
+      reducer: ee.Reducer.autoHistogram({maxBuckets: 256, cumulative: true}), 
+      geometry: geom,
+      scale: 30, // Need to specify a scale, but it doesn't matter what it is because bestEffort is true.
+      maxPixels: 65536 * 4 - 1,
+      bestEffort: true
+    }
+    
+    // Only use pixels in target that have a value in source (inside the footprint and unmasked).
+    var source = sourceImg.reduceRegion(args)
+    var target = targetImg.updateMask(sourceImg.mask()).reduceRegion(args)
+  
+    return ee.Image.cat(
+      sourceImg.select(['R']).interpolate(lookup(source.getArray('R'), target.getArray('R'))),
+      sourceImg.select(['G']).interpolate(lookup(source.getArray('G'), target.getArray('G'))),
+      sourceImg.select(['B']).interpolate(lookup(source.getArray('B'), target.getArray('B')))
+    )
+  }

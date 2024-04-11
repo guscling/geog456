@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment8_3</title>
+
+    <style>
+        .button {
+            border:blue;
+            color:white;
+            padding: 11px 20px;
+            text-align: center;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+            background-color: grey;
+            
+        }
+        .image {
+            height: auto;
+            width: 800px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title">NAIP Image of Downtown Raleigh in 2012</h1>
+
+    <button class= "button" id= "button2012">2012</button>
+    <button class="button" id="button2016">2016</button>
+    <button class="button" id="button2022">2022</button>
+
+    <br>
+    <br>
+    <image class="image" id="myImage" src="2012_2.jpg"></image>
+
+    <script>
+        const button2012 = document.getElementById("button2012");
+        const button2016 = document.getElementById("button2016");
+        const button2022 = document.getElementById("button2022");
+        const image = document.getElementById("myImage");
+        const title = document.getElementById('title')
+
+        button2012.addEventListener('click', () => {
+            image.src = "2012_2.jpg";
+            title.innerHTML = "NAIP Image of Downtown Raleigh in 2012"
+        });
+        button2016.addEventListener('click', () => {
+            image.src = "2016_2.jpg";
+            title.innerHTML = "NAIP Image of Downtown Raleigh in 2016"
+
+        });
+            button2022.addEventListener('click', () => {
+            image.src = "2022_2.jpg"  
+            title.innerHTML = "NAIP Image of Downtown Raleigh in 2022"
+
+        });
+    </script>
+</body>
+</html>

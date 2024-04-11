@@ -12,14 +12,31 @@
     integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
     crossorigin=""></script>
     <script src='./EU_migration_Data_simplified.js'></script>
+    <script type="module">import center from './@turf/center';</script>
+    <script type="module">import centroid from './@turf/centroid';</script>
+
+    </script>
 
 </head>
 <style> #map {height: 1000px; width: 1000px} </style>
 <body>
+    <h1>Year </h1>
     <div id="map"></div>
+
+    <button class="button" id="Button2014">2014</button>
+    <button class="button" id="Button2015">2015</button>
+    <button class="button" id="Button2016">2016</button>
+    <button class="button" id="Button2017">2017</button>
+    <button class="button" id="Button2018">2018</button>
+    <button class="button" id="Button2019">2019</button>
+    <button class="button" id="Button2020">2020</button>
+    <button class="button" id="Button2021">2021</button>
+    <button class="button" id="Button2022">2022</button>
+    <button class="button" id="Button2023">2023</button>
 
 <script>
 
+    // Add leflet map and json layer to it
     var map = L.map('map').setView([52.520085797742546,13.411302566528322], 3)
         L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
@@ -30,14 +47,72 @@
         "color": "#ff7800",
         "weight": 1,
         "fillOpacity": .65
-};
+    };
 
 
+    // Set year variable used for updating data- Initially set at 2014 with querySelector of first button
+    var yearText = document.querySelector('.button').textContent;
+    var year = parseInt(yearText)
 
-    L.geoJSON(data, {style: myStyle}).addTo(map);
+    // Pepare the color of the tiles based on positive and negative opinion responses (2014-2020, 2023 only)
+    function getColorPos(p) {
+    return p > 80  ? '#08519c' :
+           p > 60  ? '#3182bd' :
+           p > 40  ? '#6baed6' :
+           p > 20  ? '#9ecae1' :
+           p >  0  ? '#c6dbef' :
+                     'transparent';
+    }
 
+    function getColorNeg(n) {
+    return  n > 80  ? '#a50f15' :
+            n > 60  ? '#de2d26' :
+            n > 40  ? '#fb6a4a' :
+            n > 20  ? '#fcae91' :
+            n >  0  ? '#fee5d9' :
+                      'transparent';
+    }
 
+    //Set color of tiles based on negative/positive responses.
+    function style(feature) {
+
+        var positiveOpinon = feature.properties["GEOG456_Total_Data_" + year + "_Positive"];
+        var negativeOpinon = feature.properties["GEOG456_Total_Data_" + year + "_Negative"];
+
+        var fillColor = positiveOpinon > negativeOpinon ? getColorPos(positiveOpinon) : getColorNeg(negativeOpinon);
+        return {
+            fillColor: fillColor,
+            weight: 2,
+            opacity: 1,
+            color: 'white',
+            dashArray: '3',
+            fillOpacity: 0.7
+            };
+        }
+    // Add geoJSON to map with initial style based on 2014 data
+    var addJson = L.geoJSON(migrationData, {style: style}).addTo(map);
+
+    // On click of buttons, set style based on year
+    const myButtons = document.querySelectorAll("button");
+    myButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            map.removeLayer(addJson)
+            yearText = button.textContent;
+            year = parseInt(yearText);
+            console.log(year);
+            addJson = L.geoJSON(migrationData, {style: style}).addTo(map);
         
+        });
+    });
+    //Temp: Bind popup of country names when clicked
+    addJson.eachLayer((layer) => {
+        layer.bindPopup(layer.feature.properties.GEOUNIT);
+    })
+
+    var France = migrationData.features[0]
+    var franceGeometry = France.geometry.coordinates[0][0]
+    var centroidPoint = centroid(franceGeometry)
+    console.log(centroidPoint)
 
 </script>
     
