@@ -155,12 +155,16 @@
             zoomControl: false,
             scrollWheelZoom: false,
             minZoom: 4,
-            maxZoom:4,
+            maxZoom:6,
             attributionControl: false,
         }).setView([55.55349545845371,23.942223059183976], 4)
             L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.png?api_key=c72e380a-078b-4579-84ab-95ae1f64f20d', {
-                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+                fitBounds:map.getBounds(),
                 }).addTo(map);
+        map.doubleClickZoom.disable();
+
+
 
         map.dragging.disable();
 
