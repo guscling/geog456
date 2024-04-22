@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- CSS code provided by ChatGPT-->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+            line-height: 1.6;
+        }
+        #wrapper {
+            max-width: 960px;
+            margin: 20px auto;
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        b, u, i {
+            color: #333;
+        }
+        #textContainer {
+            margin-top: 20px;
+        }
+        #warning {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Explanation of Data Sources and Usage</h1>
+        <div id="textContainer">
+            <p>The circles represent the number of first-time asylum applicants in each European country in a given year, according to <a href=https://ec.europa.eu/eurostat/databrowser/view/MIGR_ASYAPPCTZA__custom_7673208/bookmark/table?lang=en&bookmarkId=62d39cab-3174-4cbb-b19e-e2c24fd4f754 target=”_blank”> Eurostat</a>.</p> 
+    
+                The purple and green colors represent responses to a question asked in the Standard Eurobarometer survey series since 2014, excluding 2021 and 2022: <b><u>"Please tell me whether each of the following statements evokes a positive or negative feeling for you: Immigration of people from other EU Member States"</b></u>. Purple is the percent of total <i>Negative</i> responses for a given country, while green is the percent of <i>Positive</i>  responses. The color displayed depends on if the percentage of positive or negative responses is greater. For this purpose, <i>Don't Know</i> responses are ignored.</p> 
+                
+                For the years 2014 through 2020 and 2023, data was taken from the following Standard Eurobarometer Surveys, in order by year: <a href=https://europa.eu/eurobarometer/surveys/detail/2041 target=”_blank”>82</a>, <a href=https://europa.eu/eurobarometer/surveys/detail/2098 target=”_blank”>84</a>, <a href=https://europa.eu/eurobarometer/surveys/detail/2137 target=”_blank”>86</a>, <a href=https://europa.eu/eurobarometer/surveys/detail/2143 target=”_blank”>88</a>,  <a href=https://europa.eu/eurobarometer/surveys/detail/2215 target=”_blank”>90</a>,  <a href=https://europa.eu/eurobarometer/surveys/detail/2255 target=”_blank”>92</a>, <a href=https://europa.eu/eurobarometer/surveys/detail/2355 target=”_blank”>94</a>, <a href=https://europa.eu/eurobarometer/surveys/detail/3053 target=”_blank”>100</a>.</p>
+                
+                This question was not asked in a Standard Eurobarometer survey for the years 2021 or 2022. Rather than leave these years blank, data from different Eurobarometer questions were chosen. For 2021, data was taken from a question asked in the <a href=https://europa.eu/eurobarometer/surveys/detail/2276 target=”_blank”>Special Eurobarometer Report 519</a> on the <i>Integration of immigrants in the European Union</i>: <u><b>"Generally speaking, do you think immigration from outside the EU is more of a problem or more of an opportunity for (OUR COUNTRY) today?”</b></u> Among responses options <i>Is more of a problem</i>, <i>Is more of an opportunity</i>, <i>Is equally a problem and an opportunity</i>, <i>Is neither a problem and an opportunity</i> and <i>Don't know</i>, only data from the first two responses were considered. The data from these two responses was put on the same scale as the data for every other year. Note that a large portion of the responses were disregarded.</p>
+                
+                For 2022, the data came from the European Parliament (as opposed to the European Commission) <a href= https://europa.eu/eurobarometer/surveys/detail/2932 target=”_blank”>Eurobarometer Survey 58.1</a> from the question: <b><u>"To what extent are you currently worried or not about...the following issues for your life and those of your close ones: Migration"</u></b>. The <i>Worried</i> and <i>Not Worried</i> responses were considered and treated the same as the rest of the data. <i>Don’t Know</i> responses were disregarded. 
+                
+                <p id="warning"><b>Because of these inconsistencies, the opinion data for the years 2021 and 2022 should not be considered the same as the rest of the years.  The data displayed for two years are not comparable with each other or the rest of the years.</b></p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+    integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+    crossorigin=""/>    
+    <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
+    
+    <script src='./EU_migration_Data_simplified.js'></script>
+    <script src='./marker_points.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="stylesheet" href="/Users/gusclingroth/GEOG456/Final Project/Control.MiniMap.min.css"/>
+    <script src="./Control.MiniMap.min.js"></script>
+
+<!-- <script type="module">import center from './@turf/center';</script>
+    <script type="module">import centroid from './@turf/centroid';</script> -->
+
+    </script>
+
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            height: 100%;
+            min-height: 100%;
+        }
+        #wrapper{
+            height: 100%;
+            min-height: 100%
+        } 
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="map"></div>
+        <div id="miniMapMal"></div>
+    </div>
+    <button class="button" id="Button2014">2014</button>
+    <button class="button" id="Button2015">2015</button>
+    <button class="button" id="Button2016">2016</button>
+    <button class="button" id="Button2017">2017</button>
+    <button class="button" id="Button2018">2018</button>
+    <button class="button" id="Button2019">2019</button>
+    <button class="button" id="Button2020">2020</button>
+    <button class="button" id="Button2021">2021</button>
+    <button class="button" id="Button2022">2022</button>
+    <button class="button" id="Button2023">2023</button>
+
+<script>
+
+
+// Sample data for the chart
+    const data = {
+            labels: ['January', 'February', 'March', 'April', 'May'],
+            datasets: [{
+                label: 'Sales',
+                backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1,
+                data: [10, 20, 15, 25, 30],
+            }]
+        };
+
+        // Configuration options for the chart
+        const options = {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        };
+
+        // Create the chart
+        var chartCanvas = document.createElement('canvas');
+        chartCanvas.width = 400;
+        chartCanvas.height = 200;
+        var ctx = chartCanvas.getContext('2d');
+        var myChart = new Chart(ctx, {
+            type: 'bar',
+            data: data,
+            options: options
+        });
+
+    // Add leflet map and json layer to it
+    var map = L.map('map',{ zoomControl: false, scrollWheelZoom: false, minZoom: 4, maxZoom:4, attributionControl: false }).setView([55.7765730186677,15.336914062500002], 4)
+        L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.png?api_key=c72e380a-078b-4579-84ab-95ae1f64f20d', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+            ext: 'png',
+            }).addTo(map);
+
+    
+
+
+    var Stadia_StamenTonerLite = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.{ext}?api_key=c72e380a-078b-4579-84ab-95ae1f64f20d', {
+	    minZoom: 0,
+	    maxZoom: 20,
+	    attribution: '&copy; <a href="https://www.stadiamaps.com/" target="_blank">Stadia Maps</a> &copy; <a href="https://www.stamen.com/" target="_blank">Stamen Design</a> &copy; <a href="https://openmaptiles.org/" target="_blank">OpenMapTiles</a> &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+	    ext: 'png'
+    });
+    
+    var myStyle = {
+        "color": "#ff7800",
+        "weight": 1,
+        "fillOpacity": .65
+    };
+
+
+    // Set year variable used for updating data- Initially set at 2014 with querySelector of first button
+    var yearText = document.querySelector('.button').textContent;
+    var year = parseInt(yearText)
+
+    // Pepare the color of the tiles based on positive and negative opinion responses (2014-2020, 2023 only)
+    function getColorPos(p) {
+    return p > 80  ? '#276419' :
+           p > 60  ? '#4d9221' :
+           p > 40  ? '#7fbc41' :
+           p > 20  ? '#b8e186' :
+           p > 0   ? '#e6f5d0a' :
+                     'transparent';
+    }
+
+    function getColorNeg(n) {
+    return  n > 80  ? '#8e0152' :
+            n > 60  ? '#c51b7d' :
+            n > 40  ? '#de77ae' :
+            n > 20  ? '#f1b6da' :
+            n >  0  ? '#fde0ef' :
+                      'transparent';
+    }
+
+    function getSize(a) {
+        return a > 41215 ? 25:
+               a > 12065 ? 20:
+               a > 2605 ? 15:
+               a > 1030 ? 10:
+               a > 30 ? 5:
+               a < 30 ? 0:
+                        0;            
+    }
+
+    function circleColor(a) {
+        return a > 0 ? "black":
+                     "transparent"
+    }
+
+    function radius(feature) {
+        
+        var assylumApps = feature.properties["GEOG456_Total_Data_Assylum_Apps_" + year];
+        var radius = getSize(assylumApps)
+        var color = circleColor(assylumApps)
+ 
+
+        return {
+            radius: radius,
+            fillColor: "transparent",
+            color: color,
+            dashArray:4,
+            weight: 2.5,
+            opacity: 1,
+            fillOpacity: 0.8}
+        }
+    
+  
+    //Set color of tiles based on negative/positive responses.
+    function style(feature) {
+
+        var positiveOpinon = feature.properties["GEOG456_Total_Data_" + year + "_Positive"];
+        var negativeOpinon = feature.properties["GEOG456_Total_Data_" + year + "_Negative"];
+        var fillColor = positiveOpinon > negativeOpinon ? getColorPos(positiveOpinon) : getColorNeg(negativeOpinon);
+
+        return {
+            fillColor: fillColor,
+            weight: 2,
+            opacity: 1,
+            color: 'white',
+            dashArray: '3',
+            fillOpacity: 0.7
+            };
+        }
+
+    // Add geoJSON to map with initial style based on 2014 data
+    var addPolyJson = L.geoJSON(migrationData, {style: style}).addTo(map);
+    var addPointJson = L.geoJSON(points, {
+        pointToLayer: function (feature, latlng) {
+            return L.circleMarker(latlng, radius);
+    }
+        }).setStyle(radius).addTo(map);
+
+    // On click of buttons, set style based on year
+    const myButtons = document.querySelectorAll("button");
+    myButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            map.removeLayer(addPolyJson);
+            map.removeLayer(addPointJson);
+            yearText = button.textContent;
+            year = parseInt(yearText);
+            console.log(year);
+            addPolyJson = L.geoJSON(migrationData, {style: style}).addTo(map);
+            addPointJson.setStyle(radius)
+            addPointJson.addTo(map);
+            miniMarkerStyleBen(year);
+            miniPolyStyleBen(year);
+            miniMarkerStyleCen(year);
+            miniPolyStyleCen(year);  
+            miniMarkerStyleMal(year);
+            miniPolyStyleMal(year); 
+            
+        })
+    });
+    //Temp: Bind popup of country names when clicked
+    addPolyJson.eachLayer((layer) => {
+        layer.bindPopup(chartCanvas);
+    })
+
+
+    //addPolyJson.eachLayer(function(layer) {
+    //   if (layer.feature.geometry.type === 'MultiPolygon') {
+    //       console.log(layer.feature.geometry.coordinates[0]);}})
+
+    var miniOsmBen = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.png?api_key=c72e380a-078b-4579-84ab-95ae1f64f20d', {
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            });
+    var miniMarkersBen = L.geoJSON(points, {
+        pointToLayer: function (feature, latlng) {
+            return L.circleMarker(latlng, radius);
+    }
+        }).setStyle(radius);
+    var miniPolyBen = L.geoJSON(migrationData, {style: style});
+    var miniLayersBen = new L.LayerGroup([miniOsmBen,miniMarkersBen,miniPolyBen]);
+    
+    var miniMapBen = new L.Control.MiniMap(miniLayersBen, {
+        centerFixed: [51.4, 5.4623],
+        zoomLevelFixed: 6,
+        height: 300,
+        width: 300,
+        aimingRectOptions: {color: 'transparent'},
+		}).addTo(map);
+
+    function miniPolyStyleBen(year) {
+        miniPolyBen.setStyle(function (feature) {
+            var positiveOpinon = feature.properties["GEOG456_Total_Data_" + year + "_Positive"];
+            var negativeOpinon = feature.properties["GEOG456_Total_Data_" + year + "_Negative"];
+            var fillColor = positiveOpinon > negativeOpinon ? getColorPos(positiveOpinon) : getColorNeg(negativeOpinon);
+
+            return{
+                fillColor:fillColor,
+                weight: 2,
+                opacity: 1,
+                color: 'white',
+                dashArray: '3',
+                fillOpacity: 0.7
+            };
+        });
+    };
+
+    function miniMarkerStyleBen(year) {
+        miniMarkersBen.eachLayer(function (layer) {
+            var assylumApps = layer.feature.properties["GEOG456_Total_Data_Assylum_Apps_" + year];
+            var radius = getSize(assylumApps);
+            var color = circleColor(assylumApps);
+
+            layer.setStyle({
+                radius: radius,
+                fillColor: "transparent",
+                color: color,
+                dashArray: 4,
+                weight: 2.5,
+                opacity: 1,
+                fillOpacity: 0.8
+            });
+        });
+    }
+
+
+    var miniOsmCen = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.png?api_key=c72e380a-078b-4579-84ab-95ae1f64f20d', {
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            });
+    var miniMarkersCen = L.geoJSON(points, {
+        pointToLayer: function (feature, latlng) {
+            return L.circleMarker(latlng, radius);
+    }
+        }).setStyle(radius);
+    var miniPolyCen = L.geoJSON(migrationData, {style: style});
+    var miniLayersCen = new L.LayerGroup([miniOsmCen,miniMarkersCen,miniPolyCen]);
+    
+    var miniMapCen = new L.Control.MiniMap(miniLayersCen, {
+        centerFixed: [47.6817, 16.5845],
+        zoomLevelFixed: 5,
+        height: 250,
+        width: 250,
+        position: 'topright',
+        aimingRectOptions: {color: 'transparent'},
+		}).addTo(map);
+
+    function miniPolyStyleCen(year) {
+        miniPolyCen.setStyle(function (feature) {
+            var positiveOpinon = feature.properties["GEOG456_Total_Data_" + year + "_Positive"];
+            var negativeOpinon = feature.properties["GEOG456_Total_Data_" + year + "_Negative"];
+            var fillColor = positiveOpinon > negativeOpinon ? getColorPos(positiveOpinon) : getColorNeg(negativeOpinon);
+
+            return{
+                fillColor:fillColor,
+                weight: 2,
+                opacity: 1,
+                color: 'white',
+                dashArray: '3',
+                fillOpacity: 0.7
+            };
+        });
+    };
+
+    function miniMarkerStyleCen(year) {
+        miniMarkersCen.eachLayer(function (layer) {
+            var assylumApps = layer.feature.properties["GEOG456_Total_Data_Assylum_Apps_" + year];
+            var radius = getSize(assylumApps);
+            var color = circleColor(assylumApps);
+
+            layer.setStyle({
+                radius: radius,
+                fillColor: "transparent",
+                color: color,
+                dashArray: 4,
+                weight: 2.5,
+                opacity: 1,
+                fillOpacity: 0.8
+            });
+        });
+    }
+
+    var miniOsmMal = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.png?api_key=c72e380a-078b-4579-84ab-95ae1f64f20d', {
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+            });
+    var miniMarkersMal = L.geoJSON(points, {
+        pointToLayer: function (feature, latlng) {
+            return L.circleMarker(latlng, radius);
+    }
+        }).setStyle(radius);
+    var miniPolyMal = L.geoJSON(migrationData, {style: style});
+    var miniLayersMal = new L.LayerGroup([miniOsmMal,miniMarkersMal,miniPolyMal]);
+    
+    var miniMapMal = new L.Control.MiniMap(miniLayersMal, {
+        centerFixed: [35.8992, 14.4141],
+        zoomLevelFixed: 8,
+        height: 130,
+        width: 150,
+        position: 'topright',
+        aimingRectOptions: {color: 'transparent'},
+		}).addTo(map);
+
+    function miniPolyStyleMal(year) {
+        miniPolyMal.setStyle(function (feature) {
+            var positiveOpinon = feature.properties["GEOG456_Total_Data_" + year + "_Positive"];
+            var negativeOpinon = feature.properties["GEOG456_Total_Data_" + year + "_Negative"];
+            var fillColor = positiveOpinon > negativeOpinon ? getColorPos(positiveOpinon) : getColorNeg(negativeOpinon);
+
+            return{
+                fillColor:fillColor,
+                weight: 2,
+                opacity: 1,
+                color: 'white',
+                dashArray: '3',
+                fillOpacity: 0.7
+            };
+        });
+    };
+
+    function miniMarkerStyleMal(year) {
+        miniMarkersMal.eachLayer(function (layer) {
+            var assylumApps = layer.feature.properties["GEOG456_Total_Data_Assylum_Apps_" + year];
+            var radius = getSize(assylumApps);
+            var color = circleColor(assylumApps);
+
+            layer.setStyle({
+                radius: radius,
+                fillColor: "transparent",
+                color: color,
+                dashArray: 4,
+                weight: 2.5,
+                opacity: 1,
+                fillOpacity: 0.8
+            });
+        });
+    }
+
+    var marker = new L.marker([35.5562, 14.961], { opacity: 0.01 });
+marker.bindTooltip("Malta", { permanent: true, offset: [0, 0] });
+marker.addTo(miniLayersMal);
+
+var marker = new L.marker([43.4563, 23.0131], { opacity: 0.01 });
+marker.bindTooltip("Central Europe", { permanent: true, offset: [0, 0] });
+marker.addTo(miniLayersCen);
+
+var marker = new L.marker([49.1253, 9.2396], { opacity: 0.01 });
+marker.bindTooltip("Benelux", { permanent: true, offset: [0, 0] });
+marker.addTo(miniLayersBen);
+
+
+</script>
+    
+</body>
+</html>
