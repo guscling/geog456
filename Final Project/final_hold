@@ -16,8 +16,9 @@
     <script src='./EU_migration_Data_simplified.js'></script>
     <script src='./marker_points.js'></script>
 
-    <link rel="stylesheet" href="/Users/gusclingroth/GEOG456/Final Project/Control.MiniMap.min.css"/>
-    <script src="./Control.MiniMap.min.js"></script>
+<!--<link rel="stylesheet" href="./Control.MiniMap.min.css">-->
+    <!--<script src="./Control.MiniMap.min.js"></script>-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>-->
 
 <!-- <script type="module">import center from './@turf/center';</script>
     <script type="module">import centroid from './@turf/centroid';</script> -->
@@ -25,11 +26,15 @@
     </script>
 
     <style>
-        /* CSS styles for layout */
+        body {
+            background-color: #f0f0f0;
+        }
         #wrapper {
             display: flex;
             height: 100vh;
+            width: 100%;
             min-height: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         #map {
@@ -37,23 +42,25 @@
             height: 100%;
             min-height: 100%;
             width: 100%;
-            float: right; /* Float map to the right */
-            background-color: black; /* Black background for map */
-            border: 1px solid black; /* Optional: Add border for map */
+            float: right; 
+            background-color: black; 
+            border: 1px solid black;
+            z-index: 50;
         }
 
         #sideBar {
-            width: 25%;
+            width: 30%;
+            min-width: 408px;
             padding: 20px;
             box-sizing: border-box;
-            background-color: #f0f0f0; /* Light gray background for buttons */
+            background-color: #f0f0f0;
             float: left;
-            position: relative;
+            max-width: 500px;
         }
 
         .button {
             margin-bottom: 10px;
-            padding:   10px 10px;
+            padding:   4% 4%;
             font-size: 16px;
             background-color: rgb(73, 62, 62);
             color: white;
@@ -64,16 +71,10 @@
         }
 
         .button:hover {
-            background-color: #9f9090; /* Lighter gray on hover */
+            background-color: #9f9090; 
         }
-        #buttonInstructions{
-            font-size: larger;
-            text-align: center;
-            font-weight: 1000;
-        }
-        .legend {
+       .legend {
             line-height: 18px;
-            color: #555;
         }
         .legend i {
             width: 18px;
@@ -93,39 +94,61 @@
             margin-right: 10px;
             font-weight: bold;
         }
-        #dataExplanation{
-            position: relative;
-        }
         #title{
             float: top;
-        }       
+            text-align: center;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position:relative; 
+        }
+        #chartPlaceholder{
+            height: 40%;
+            width: 100%;
+            max-width: 450px;
+            border: solid black;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #ffffff;
+        }    
+        #dataExplanation{
+            text-align: left;
+            font-size:.144in;
+        }
     </style>
 </head>
 
 <body>
-    <h1 id="tile">Is Public Opinion of Migration Impacted by the Number of Assylum Seekers in the EU?</h1>
+    <h1 id="title">Is Public Opinion of Migration Impacted by the Number of Assylum Seekers in the EU?</h1>
     <div id="wrapper">
         <div id="sideBar">
-            <p id="buttonInstructions">Click buttons to change year</p>
-            <button class="button" id="Button2014">2014</button>
-            <button class="button" id="Button2015">2015</button>
-            <button class="button" id="Button2016">2016</button>
-            <button class="button" id="Button2017">2017</button>
-            <button class="button" id="Button2018">2018</button>
-            <button class="button" id="Button2019">2019</button>
-            <button class="button" id="Button2020">2020</button>
-            <button class="button" id="Button2021">2021</button>
-            <button class="button" id="Button2022">2022</button>
-            <button class="button" id="Button2023">2023</button>
-
-            <div id="dataExplaination">
-                
+            <div id="buttonContainer"> 
+                <button class="button" id="Button2014">2014</button>
+                <button class="button" id="Button2015">2015</button>
+                <button class="button" id="Button2016">2016</button>
+                <button class="button" id="Button2017">2017</button>
+                <button class="button" id="Button2018">2018</button>
+                <button class="button" id="Button2019">2019</button>
+                <button class="button" id="Button2020">2020</button>
+                <button class="button" id="Button2021">2021</button>
+                <button class="button" id="Button2022">2022</button>
+                <button class="button" id="Button2023">2023</button>
             </div>
+            <div id="explanation wrapper">
+            <div id="dataExplanation"></div>
+            <p><a href="https://guscling.github.io/geog456/Final%20Project/data_explanation" target=”_blank”>Complete explanation of data sources and usage</a>
+            </div>
+            <p id="totalApps"></p>
+            <div id="chartPlaceholder">Placeholder for future chart. On selectng a country, will display the total asylum applications by year</div>
         </div>
         <div id="map"></div>
     </div>
 
     <script>
+        function numberWithCommas(x) {
+            return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+}
     
         // Add leflet map and json layer to it
         var map = L.map('map',{
@@ -134,7 +157,7 @@
             minZoom: 4,
             maxZoom:4,
             attributionControl: false,
-        }).setView([55.55349545845371,22.042223059183976], 4)
+        }).setView([55.55349545845371,23.942223059183976], 4)
             L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.png?api_key=c72e380a-078b-4579-84ab-95ae1f64f20d', {
                 attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
                 }).addTo(map);
@@ -173,7 +196,7 @@
         }
 
         function getSize(a) {
-            return a > 500000 ? 40:
+            return a > 500000 ? 38:
                    a > 100000 ? 30:
                    a > 50000  ? 25:
                    a > 10000  ? 20:
@@ -234,41 +257,50 @@
 
         // On click of buttons, set style based on year
         const myButtons = document.querySelectorAll("button");
+        let selectedButton = null;
         myButtons.forEach(button => {
             button.addEventListener('click', () => {
+                if (selectedButton) {
+                    selectedButton.style.backgroundColor = '';
+                }
                 map.removeLayer(addPolyJson);
                 map.removeLayer(addPointJson);
                 yearText = button.textContent;
                 year = parseInt(yearText);
-                console.log(year);
                 addPolyJson = L.geoJSON(migrationData, {style: style}).addTo(map);
                 addPointJson.setStyle(radius)
                 addPointJson.addTo(map);
-                miniPolyStyleBen(year);
-                miniMarkerStyleBen(year);
-                miniPolyStyleCen(year);
-                miniMarkerStyleCen(year);  
-                miniPolyStyleMal(year);
-                miniMarkerStyleMal(year);
-                dataExplaination(year);
-
-                
+                //miniPolyStyleBen(year);
+                //miniMarkerStyleBen(year);
+                //miniPolyStyleCen(year);
+                //miniMarkerStyleCen(year);  
+                //miniPolyStyleMal(year);
+                //miniMarkerStyleMal(year);
+                dataExplanation(year);
+                document.getElementById('Button'+year).style.backgroundColor = '#9f9090'
+                selectedButton = button;
+                document.getElementById('totalApps').innerHTML = "TOTAL ASSYLUM APPLICANTS IN " + year + ": " + "<b>" + numberWithCommas(migrationData.features[28].properties["GEOG456_Total_Data_Assylum_Apps_"+year])+"</b>";
+                addPolyJson.eachLayer((layer) => { 
+                    if (!(year > 2019 && layer.feature.properties.GEOUNIT === "GREAT BRITAIN")){
+                        layer.bindPopup("<b>"+layer.feature.properties.GEOUNIT+"</b>"+"<br>" + "ASYLUM APPLICANTS: " + numberWithCommas(layer.feature.properties["GEOG456_Total_Data_Assylum_Apps_" + year]) + "<br>"  + "PERCENT NEGATIVE : " + layer.feature.properties["GEOG456_Total_Data_" + year + "_Negative"].toString() + '<br>' + "PERCENT POSITIVE : " +layer.feature.properties["GEOG456_Total_Data_" + year +"_Positive"].toString())
+                    }
+                });
+                addPointJson.eachLayer((layer) => { 
+                    if (!(year>2019 && layer.feature.properties.GEOUNIT === "GREAT BRITAIN")){
+                        layer.bindPopup("<b>"+layer.feature.properties.GEOUNIT+"</b>"+"<br>" + "ASYLUM APPLICANTS: " + numberWithCommas(layer.feature.properties["GEOG456_Total_Data_Assylum_Apps_" + year]) + "<br>"  + "PERCENT NEGATIVE : " + layer.feature.properties["GEOG456_Total_Data_" + year + "_Negative"].toString() + '<br>' + "PERCENT POSITIVE : " +layer.feature.properties["GEOG456_Total_Data_" + year +"_Positive"].toString())
+                    }
+                });
             })
         });
-        //Temp: Bind popup of country names when clicked
-        addPolyJson.eachLayer((layer) => {
-            layer.bindPopup(layer.feature.properties.GEOUNIT);
-        })
+
 
         var legendPos = L.control({position: 'topleft'});
         legendPos.onAdd = function (map) {
             var div = L.DomUtil.create('div', 'info legend');
-            var title = '<strong>Percent Positive Responses</strong><br>'; // Title text
-
+            var title = '<strong>Percent Positive Responses</strong><br>';
             var grades = [0, 20, 40, 60, 80];
             var labels = [];
 
-            // Loop through our density intervals and generate a label with a colored square for each interval
             for (var i = 0; i < grades.length; i++) {
                 labels.push(
                     '<i style="background:' + getColorPos(grades[i] + 1) + '"></i> ' +
@@ -285,12 +317,11 @@
         var legendNeg = L.control({position: 'topleft'});
         legendNeg.onAdd = function (map) {
             var div = L.DomUtil.create('div', 'info legend');
-            var title = '<strong>Percent Negative Responses</strong><br>'; // Title text
+            var title = '<strong>Percent Negative Responses</strong><br>'; 
 
             var grades = [0, 20, 40, 60, 80];
             var labels = [];
 
-            // Loop through our density intervals and generate a label with a colored square for each interval
             for (var i = 0; i < grades.length; i++) {
                 labels.push(
                     '<i style="background:' + getColorNeg(grades[i] + 1) + '"></i> ' +
@@ -308,12 +339,10 @@
         var legendMarker = L.control({ position: 'topleft' });
         legendMarker.onAdd = function (map) {
             var div = L.DomUtil.create('div', 'info legendMarker');
-            var title = '<strong>Number of Assylum <br> Applicants</strong><br>'; // Title text
-
+            var title = '<strong>Number of Assylum <br> Applicants</strong><br>'; 
             var grades = [0,500,5000,10000,50000,100000,500000];
             var labels = [];
 
-            // Loop through grades and generate a label with a circle marker for each grade
             for (var i = 0; i < grades.length; i++) {
                 var size = getSize(grades[i] + 1)*2;
                 labels.push(
@@ -325,211 +354,25 @@
 
         div.innerHTML = title + labels.join('<br>');
         return div;
-};
-legendMarker.addTo(map);
-
-
-
-        //addPolyJson.eachLayer(function(layer) {
-        //   if (layer.feature.geometry.type === 'MultiPolygon') {
-        //       console.log(layer.feature.geometry.coordinates[0]);}})
-
-        var miniOsmBen = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.png?api_key=c72e380a-078b-4579-84ab-95ae1f64f20d', {
-                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-                    minZoom: 6,
-                    maxZoom: 6,
-        });
-        
-        var miniPolyBen = L.geoJSON(migrationData, {style: style});
-    
-        var miniMarkersBen = L.geoJSON(points, {
-            pointToLayer: function (feature, latlng) {
-            return L.circleMarker(latlng, radius);
-        }
-            }).setStyle(radius);
-
-        var miniLayersBen = new L.LayerGroup([miniPolyBen,miniMarkersBen,miniOsmBen]);
-        var miniMapBen = new L.Control.MiniMap(miniLayersBen, {
-            centerFixed: [51.4, 5.4623],
-            zoomLevelFixed: 6,
-            height: 300,
-            width: 300,
-            aimingRectOptions: {color: 'transparent'},
-            position:'bottomright',
-            }).addTo(map);
-
-        function miniPolyStyleBen(year) {
-            miniPolyBen.setStyle(function (feature) {
-                var positiveOpinon = feature.properties["GEOG456_Total_Data_" + year + "_Positive"];
-                var negativeOpinon = feature.properties["GEOG456_Total_Data_" + year + "_Negative"];
-                var fillColor = positiveOpinon > negativeOpinon ? getColorPos(positiveOpinon) : getColorNeg(negativeOpinon);
-
-                return{
-                    fillColor:fillColor,
-                    weight: 2,
-                    opacity: 1,
-                    color: 'white',
-                    dashArray: '3',
-                    fillOpacity: 0.7,
-                };
-            });
         };
-
-        function miniMarkerStyleBen(year) {
-            miniMarkersBen.eachLayer(function (layer) {
-                var assylumApps = layer.feature.properties["GEOG456_Total_Data_Assylum_Apps_" + year];
-                var radius = getSize(assylumApps);
-                var color = circleColor(assylumApps);
-
-                layer.setStyle({
-                    radius: radius,
-                    fillColor: "transparent",
-                    color: color,
-                    dashArray: 4,
-                    weight: 2.5,
-                    opacity: 1,
-                    fillOpacity: 0.8,
-                });
-            });
-        }
+        legendMarker.addTo(map);
 
 
-        var miniOsmCen = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.png?api_key=c72e380a-078b-4579-84ab-95ae1f64f20d', {
-                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-                    minZoom: 5,
-                    maxZoom: 5,
-        });
-        var miniPolyCen = L.geoJSON(migrationData, {style: style});
-        var miniMarkersCen = L.geoJSON(points, {
-            pointToLayer: function (feature, latlng) {
-                return L.circleMarker(latlng, radius);
-        }
-            }).setStyle(radius);
-        var miniLayersCen = new L.LayerGroup([miniOsmCen,miniMarkersCen,miniPolyCen]);
+
         
-        var miniMapCen = new L.Control.MiniMap(miniLayersCen, {
-            centerFixed: [47.6817, 16.5845],
-            zoomLevelFixed: 5,
-            height: 250,
-            width: 250,
-            position: 'topright',
-            aimingRectOptions: {color: 'transparent'},
-            }).addTo(map);
 
-        function miniPolyStyleCen(year) {
-            miniPolyCen.setStyle(function (feature) {
-                var positiveOpinon = feature.properties["GEOG456_Total_Data_" + year + "_Positive"];
-                var negativeOpinon = feature.properties["GEOG456_Total_Data_" + year + "_Negative"];
-                var fillColor = positiveOpinon > negativeOpinon ? getColorPos(positiveOpinon) : getColorNeg(negativeOpinon);
-
-                return{
-                    fillColor:fillColor,
-                    weight: 2,
-                    opacity: 1,
-                    color: 'white',
-                    dashArray: '3',
-                    fillOpacity: 0.7
-                };
-            });
-        };
-
-        function miniMarkerStyleCen(year) {
-            miniMarkersCen.eachLayer(function (layer) {
-                var assylumApps = layer.feature.properties["GEOG456_Total_Data_Assylum_Apps_" + year];
-                var radius = getSize(assylumApps);
-                var color = circleColor(assylumApps);
-
-                layer.setStyle({
-                    radius: radius,
-                    fillColor: "transparent",
-                    color: color,
-                    dashArray: 4,
-                    weight: 2.5,
-                    opacity: 1,
-                    fillOpacity: 0.8
-                });
-            });
-        }
-
-        var miniOsmMal = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.png?api_key=c72e380a-078b-4579-84ab-95ae1f64f20d', {
-                    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-                    minZoom:8,
-                    maxZoom:8,
-        });
-        var miniPolyMal = L.geoJSON(migrationData, {style: style});    
-        var miniMarkersMal = L.geoJSON(points, {
-            pointToLayer: function (feature, latlng) {
-                return L.circleMarker(latlng, radius);
-        }
-            }).setStyle(radius);
-        var miniLayersMal = new L.LayerGroup([miniOsmMal,miniMarkersMal,miniPolyMal]);
-        
-        var miniMapMal = new L.Control.MiniMap(miniLayersMal, {
-            centerFixed: [35.8992, 14.4141],
-            zoomLevelFixed: 8,
-            height: 130,
-            width: 150,
-            position: 'topright',
-            aimingRectOptions: {color: 'transparent'},
-            }).addTo(map);
-
-        function miniPolyStyleMal(year) {
-            miniPolyMal.setStyle(function (feature) {
-                var positiveOpinon = feature.properties["GEOG456_Total_Data_" + year + "_Positive"];
-                var negativeOpinon = feature.properties["GEOG456_Total_Data_" + year + "_Negative"];
-                var fillColor = positiveOpinon > negativeOpinon ? getColorPos(positiveOpinon) : getColorNeg(negativeOpinon);
-
-                return{
-                    fillColor:fillColor,
-                    weight: 2,
-                    opacity: 1,
-                    color: 'white',
-                    dashArray: '3',
-                    fillOpacity: 0.7
-                };
-            });
-        };
-
-        function miniMarkerStyleMal(year) {
-            miniMarkersMal.eachLayer(function (layer) {
-                var assylumApps = layer.feature.properties["GEOG456_Total_Data_Assylum_Apps_" + year];
-                var radius = getSize(assylumApps);
-                var color = circleColor(assylumApps);
-
-                layer.setStyle({
-                    radius: radius,
-                    fillColor: "transparent",
-                    color: color,
-                    dashArray: 4,
-                    weight: 2.5,
-                    opacity: 1,
-                    fillOpacity: 0.8
-                });
-            });
-        }
-
-        var marker = new L.marker([35.5562, 14.961], { opacity: 0.01 });
-        marker.bindTooltip("Malta", { permanent: true, offset: [0, 0] });
-        marker.addTo(miniLayersMal);
-
-        var marker = new L.marker([43.4563, 23.0131], { opacity: 0.01 });
-        marker.bindTooltip("Central Europe", { permanent: true, offset: [0, 0] });
-        marker.addTo(miniLayersCen);
-
-        var marker = new L.marker([49.1253, 9.2396], { opacity: 0.01 });
-        marker.bindTooltip("Benelux", { permanent: true, offset: [0, 0] });
-        marker.addTo(miniLayersBen);
-
-        function dataExplaination(year) {
-            var docExp = document.getElementById("dataExplaination");
+        function dataExplanation(year) {
+            var docExp = document.getElementById("dataExplanation");
             if (year == 2021){
-                docExp.innerHTML=('This is the append for the year 2021');
+                docExp.innerHTML=("<p>The data is based on the <i>Problem</i> and <i>Opportunity</i> responses to the Eurobarometer survey question: <b><u>Generally speaking, do you think immigration from outside the EU is more of a problem or more of an opportunity for ([YOUR] COUNTRY) today?</u></b> For the purpose of mantaining a diverging symbology, the responses <i>Is equally a problem and an opportunity</i> and <i>Is neither a problem nor an opportunity</i> are ignored, which account for a large portion of the responses to this question</p> <b>NOTE THAT THIS DATA COMES FROM A DIFFERENT QUESTION AND IS NOT DIRECTLY COMPARABLE TO THE OTHER YEARS</b>" );
             } else if (year == 2022){
-                docExp.innerHTML=('This is the append for the year 2022');
+                docExp.innerHTML=("<p>The data is based on the total <i>Worred</i> and <i>Not Worried</i> responses to the Eurobarometer survey question: <b><u>'To what extent are you currently worried or not about each of the following issues for your life and those of your close ones: Migration'</u></b>. <i>Worried</i> is considered the negative response while <i>Not Worried</i> is considered the positive response</p> <b>NOTE THAT THIS DATA COMES FROM A DIFFERENT QUESTION AND IS NOT DIRECTLY COMPARABLE TO THE OTHER YEARS</b>");
             } else {
-                docExp.innerHTML=("")
+                docExp.innerHTML=("<p>The data is based on the total <i>Negative</i> and <i>Positive</i> responses to the Eurobarometer survey question: <b><u>'Please tell me whether each of the following statements evokes a positive or negative feeling for you. Immigration of people from outside the EU'</u></b></p>");
             };
         };
+
+        document.getElementById('Button2014').click();
 
     </script>
     
