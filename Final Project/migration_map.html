@@ -26,10 +26,12 @@
     </script>
 
     <style>
+        /*Help from Chat Gpt with CSS code*/
         body {
             background-color: #f0f0f0;
         }
-        #wrapper {
+
+        #wrapper { /* Contains everything but the title */ 
             display: flex;
             height: 100vh;
             width: 100%;
@@ -37,7 +39,7 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        #map {
+        #map { /* Div for the map*/
             flex: 1;
             height: 100%;
             min-height: 100%;
@@ -48,7 +50,7 @@
             z-index: 50;
         }
 
-        #sideBar {
+        #sideBar { /*the div next to the map containing buttons, explanation, and chart placeholder*/
             width: 30%;
             min-width: 408px;
             padding: 20px;
@@ -69,11 +71,11 @@
             cursor: pointer;
             transition: background-color 0.3s, color 0.3s;
         }
-
         .button:hover {
             background-color: #9f9090; 
         }
-       .legend {
+
+       .legend { /*Legend on the map*/
             line-height: 18px;
         }
         .legend i {
@@ -83,24 +85,24 @@
             margin-right: 8px;
             opacity: 0.7;
         }
-
         .info.legendMarker {
             display: flex;
             flex-direction: column;
             align-items: flex-start;
         }
-
         .info.legendMarker span {
             margin-right: 10px;
             font-weight: bold;
         }
+
         #title{
             float: top;
             text-align: center;
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             position:relative; 
         }
-        #chartPlaceholder{
+
+        #chartPlaceholder{ 
             height: 40%;
             width: 100%;
             max-width: 450px;
@@ -111,7 +113,8 @@
             align-items: center;
             text-align: center;
             background-color: #ffffff;
-        }    
+        }
+
         #dataExplanation{
             text-align: left;
             font-size:.144in;
@@ -146,6 +149,7 @@
     </div>
 
     <script>
+        //Automatically spertes thousands with commas when applied-- from stackexchange
         function numberWithCommas(x) {
             return x.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
 }
@@ -162,25 +166,15 @@
                 attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
                 fitBounds:map.getBounds(),
                 }).addTo(map);
+        //prevent map from zooming or moving 
         map.doubleClickZoom.disable();
-
-
-
         map.dragging.disable();
-
-
-        var myStyle = {
-            "color": "#ff7800",
-            "weight": 1,
-            "fillOpacity": .65
-        };
-
 
         // Set year variable used for updating data- Initially set at 2014 with querySelector of first button
         var yearText = document.querySelector('.button').textContent;
         var year = parseInt(yearText)
 
-        // Pepare the color of the tiles based on positive and negative opinion responses (2014-2020, 2023 only)
+        // Select the color of the tiles based on positive and negative opinion responses
         function getColorPos(p) {
         return p > 80  ? '#276419' :
                p > 60  ? '#4d9221' :
@@ -199,6 +193,7 @@
                           'transparent';
         }
 
+        // Select the radius of the circle markers based on the number of applicants
         function getSize(a) {
             return a > 500000 ? 38:
                    a > 100000 ? 30:
@@ -210,12 +205,12 @@
                    
                                 0;            
         }
-
+        //Make values with no data invisible (UK after 2019)
         function circleColor(a) {
             return a > 0 ? "black":
                         "transparent"
         }
-
+        //Sets the radius of the circle markers
         function radius(feature) {
             
             var assylumApps = feature.properties["GEOG456_Total_Data_Assylum_Apps_" + year];
@@ -234,7 +229,7 @@
             }
         
     
-        //Set color of tiles based on negative/positive responses.
+        //Set color of country polygons
         function style(feature) {
 
             var positiveOpinon = feature.properties["GEOG456_Total_Data_" + year + "_Positive"];
@@ -251,7 +246,7 @@
                 };
             }
 
-        // Add geoJSON to map with initial style based on 2014 data
+        // Add geoJSON data to map as polygon and circle markers, setting style as above
         var addPolyJson = L.geoJSON(migrationData, {style: style}).addTo(map);
         var addPointJson = L.geoJSON(points, {
             pointToLayer: function (feature, latlng) {
@@ -259,7 +254,9 @@
         }
             }).setStyle(radius).addTo(map);
 
-        // On click of buttons, set style based on year
+        //Button function
+        //Sets the style of polygons and markers based on data from slected year
+        // Also changes data for minimaps and popup markers
         const myButtons = document.querySelectorAll("button");
         let selectedButton = null;
         myButtons.forEach(button => {
@@ -297,7 +294,7 @@
             })
         });
 
-
+        //Create legend for positive colors
         var legendPos = L.control({position: 'topleft'});
         legendPos.onAdd = function (map) {
             var div = L.DomUtil.create('div', 'info legend');
@@ -317,7 +314,7 @@
         };
         legendPos.addTo(map);
 
-
+        //Create legend for negative colors
         var legendNeg = L.control({position: 'topleft'});
         legendNeg.onAdd = function (map) {
             var div = L.DomUtil.create('div', 'info legend');
@@ -338,8 +335,7 @@
         };
         legendNeg.addTo(map);
 
-        
-        
+        //Create legend for marker radius
         var legendMarker = L.control({ position: 'topleft' });
         legendMarker.onAdd = function (map) {
             var div = L.DomUtil.create('div', 'info legendMarker');
@@ -361,23 +357,22 @@
         };
         legendMarker.addTo(map);
 
-
-
+        //Create minimap centered on Benelux
         var miniOsmBen = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.png?api_key=c72e380a-078b-4579-84ab-95ae1f64f20d', {
                     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
                     minZoom: 6,
                     maxZoom: 6,
         });
-        
+        //import geoJSON
         var miniPolyBen = L.geoJSON(migrationData, {style: style});
-    
         var miniMarkersBen = L.geoJSON(points, {
             pointToLayer: function (feature, latlng) {
             return L.circleMarker(latlng, radius);
         }
             }).setStyle(radius);
-
+        //Group vectors and map in layer group
         var miniLayersBen = new L.LayerGroup([miniPolyBen,miniMarkersBen,miniOsmBen]);
+        //Create map on bottom right
         var miniMapBen = new L.Control.MiniMap(miniLayersBen, {
             centerFixed: [51.4, 5.4623],
             zoomLevelFixed: 6,
@@ -386,13 +381,12 @@
             aimingRectOptions: {color: 'transparent'},
             position:'bottomright',
             }).addTo(map);
-
+        //Set style of polygons
         function miniPolyStyleBen(year) {
             miniPolyBen.setStyle(function (feature) {
                 var positiveOpinon = feature.properties["GEOG456_Total_Data_" + year + "_Positive"];
                 var negativeOpinon = feature.properties["GEOG456_Total_Data_" + year + "_Negative"];
                 var fillColor = positiveOpinon > negativeOpinon ? getColorPos(positiveOpinon) : getColorNeg(negativeOpinon);
-
                 return{
                     fillColor:fillColor,
                     weight: 2,
@@ -403,13 +397,12 @@
                 };
             });
         };
-
+        //Set style of points
         function miniMarkerStyleBen(year) {
             miniMarkersBen.eachLayer(function (layer) {
                 var assylumApps = layer.feature.properties["GEOG456_Total_Data_Assylum_Apps_" + year];
                 var radius = getSize(assylumApps);
                 var color = circleColor(assylumApps);
-
                 layer.setStyle({
                     radius: radius,
                     fillColor: "transparent",
@@ -422,20 +415,22 @@
             });
         }
 
-
+        //Create minimap centered on Benelux
         var miniOsmCen = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.png?api_key=c72e380a-078b-4579-84ab-95ae1f64f20d', {
                     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
                     minZoom: 5,
                     maxZoom: 5,
         });
-        var miniPolyCen = L.geoJSON(migrationData, {style: style});
+        //Import geoJSON
+        var miniPolyCen = L.geoJSON(migrationData, {style: style});  
         var miniMarkersCen = L.geoJSON(points, {
             pointToLayer: function (feature, latlng) {
                 return L.circleMarker(latlng, radius);
         }
             }).setStyle(radius);
+        //Geoup map and vectors in layer group    
         var miniLayersCen = new L.LayerGroup([miniOsmCen,miniMarkersCen,miniPolyCen]);
-        
+        //Create map on top right
         var miniMapCen = new L.Control.MiniMap(miniLayersCen, {
             centerFixed: [47.6817, 16.5845],
             zoomLevelFixed: 5,
@@ -444,13 +439,12 @@
             position: 'topright',
             aimingRectOptions: {color: 'transparent'},
             }).addTo(map);
-
+        //Set style of polygons
         function miniPolyStyleCen(year) {
             miniPolyCen.setStyle(function (feature) {
                 var positiveOpinon = feature.properties["GEOG456_Total_Data_" + year + "_Positive"];
                 var negativeOpinon = feature.properties["GEOG456_Total_Data_" + year + "_Negative"];
                 var fillColor = positiveOpinon > negativeOpinon ? getColorPos(positiveOpinon) : getColorNeg(negativeOpinon);
-
                 return{
                     fillColor:fillColor,
                     weight: 2,
@@ -461,13 +455,12 @@
                 };
             });
         };
-
+        //Set style of markers
         function miniMarkerStyleCen(year) {
             miniMarkersCen.eachLayer(function (layer) {
                 var assylumApps = layer.feature.properties["GEOG456_Total_Data_Assylum_Apps_" + year];
                 var radius = getSize(assylumApps);
                 var color = circleColor(assylumApps);
-
                 layer.setStyle({
                     radius: radius,
                     fillColor: "transparent",
@@ -479,12 +472,13 @@
                 });
             });
         }
-
+        //Create minimap centered on Malta
         var miniOsmMal = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.png?api_key=c72e380a-078b-4579-84ab-95ae1f64f20d', {
                     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
                     minZoom:8,
                     maxZoom:8,
         });
+        //Add geoJSON data and group with map
         var miniPolyMal = L.geoJSON(migrationData, {style: style});    
         var miniMarkersMal = L.geoJSON(points, {
             pointToLayer: function (feature, latlng) {
@@ -492,7 +486,7 @@
         }
             }).setStyle(radius);
         var miniLayersMal = new L.LayerGroup([miniOsmMal,miniMarkersMal,miniPolyMal]);
-        
+        //Add minimap top right
         var miniMapMal = new L.Control.MiniMap(miniLayersMal, {
             centerFixed: [35.8992, 14.4141],
             zoomLevelFixed: 8,
@@ -501,13 +495,12 @@
             position: 'topright',
             aimingRectOptions: {color: 'transparent'},
             }).addTo(map);
-
+        //Set style of polygons 
         function miniPolyStyleMal(year) {
             miniPolyMal.setStyle(function (feature) {
                 var positiveOpinon = feature.properties["GEOG456_Total_Data_" + year + "_Positive"];
                 var negativeOpinon = feature.properties["GEOG456_Total_Data_" + year + "_Negative"];
                 var fillColor = positiveOpinon > negativeOpinon ? getColorPos(positiveOpinon) : getColorNeg(negativeOpinon);
-
                 return{
                     fillColor:fillColor,
                     weight: 2,
@@ -518,13 +511,12 @@
                 };
             });
         };
-
+        //Set style for markers
         function miniMarkerStyleMal(year) {
             miniMarkersMal.eachLayer(function (layer) {
                 var assylumApps = layer.feature.properties["GEOG456_Total_Data_Assylum_Apps_" + year];
                 var radius = getSize(assylumApps);
                 var color = circleColor(assylumApps);
-
                 layer.setStyle({
                     radius: radius,
                     fillColor: "transparent",
@@ -536,19 +528,20 @@
                 });
             });
         }
+        // Create name lable markers for minimaps
+        var labelMal = new L.marker([35.4962, 14.961], { opacity: 0.01 });
+        labelMal.bindTooltip("Malta", { permanent: true, offset: [0, 0] });
+        labelMal.addTo(miniLayersMal);
 
-        var markerMal = new L.marker([35.4962, 14.961], { opacity: 0.01 });
-        markerMal.bindTooltip("Malta", { permanent: true, offset: [0, 0] });
-        markerMal.addTo(miniLayersMal);
+        var labelCen = new L.marker([43.4563, 23.0131], { opacity: 0.01 });
+        labelCen.bindTooltip("Central Europe", { permanent: true, offset: [0, 0] });
+        labelCen.addTo(miniLayersCen);
 
-        var markerCen = new L.marker([43.4563, 23.0131], { opacity: 0.01 });
-        markerCen.bindTooltip("Central Europe", { permanent: true, offset: [0, 0] });
-        markerCen.addTo(miniLayersCen);
+        var labelBen = new L.marker([49.1253, 9.2396], { opacity: 0.01 });
+        labelBen.bindTooltip("Benelux", { permanent: true, offset: [0, 0] });
+        labelBen.addTo(miniLayersBen);
 
-        var markerBen = new L.marker([49.1253, 9.2396], { opacity: 0.01 });
-        markerBen.bindTooltip("Benelux", { permanent: true, offset: [0, 0] });
-        markerBen.addTo(miniLayersBen);
-
+        //Set data explanation about survey question for the relevant year in the sidebar 
         function dataExplanation(year) {
             var docExp = document.getElementById("dataExplanation");
             if (year == 2021){
@@ -560,6 +553,7 @@
             };
         };
 
+        //On load of page, select 2014 button (and set the)
         document.getElementById('Button2014').click();
 
     </script>

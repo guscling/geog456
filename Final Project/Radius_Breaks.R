@@ -19,12 +19,13 @@ min(mins)
 #1216869
 
 total_migration <- migration_data[,c(1,34:43)]
-total_migration_no_country <- total_migration[,-c(1)]
+total_migration_no_country <- total_migration[-c(29),-c(1)]
 total_migration_array <- array(unlist(total_migration_no_country))
 total_migration_array <- na.omit(total_migration_array)
 sorted_array <- sort(total_migration_array)
 
 classify_intervals(var=sorted_array,n=7,style="kmeans")
 
-
-
+length(sorted_array)
+sum(sorted_array >= 7700 & sorted_array <21000)
+max(sorted_array)
