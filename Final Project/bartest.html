@@ -6,20 +6,35 @@
     <title>Simple Bar Chart</title>
     <!-- Include Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./EU_migration_Data_simplified.js"></script>
 </head>
 <body>
     <canvas id="myChart" width="400" height="200"></canvas>
+    <div id="buttonContainer"> 
+        <button class="button" id="Button2014">2014</button>
+        <button class="button" id="Button2015">2015</button>
+        <button class="button" id="Button2016">2016</button>
+        <button class="button" id="Button2017">2017</button>
+        <button class="button" id="Button2018">2018</button>
+        <button class="button" id="Button2019">2019</button>
+        <button class="button" id="Button2020">2020</button>
+        <button class="button" id="Button2021">2021</button>
+        <button class="button" id="Button2022">2022</button>
+        <button class="button" id="Button2023">2023</button>
+    </div>
 
     <script>
-        // Sample data for the chart
-        const data = {
-            labels: ['January', 'February', 'March', 'April', 'May'],
+        var yearText = document.querySelector('.button').textContent;
+        var year = parseInt(yearText)        
+        
+        const barData = {   
+            labels: ['2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
             datasets: [{
-                label: 'Sales',
+                label: geounit,
                 backgroundColor: 'rgba(54, 162, 235, 0.5)',
                 borderColor: 'rgba(54, 162, 235, 1)',
                 borderWidth: 1,
-                data: [10, 20, 15, 25, 30],
+                data: [],
             }]
         };
 

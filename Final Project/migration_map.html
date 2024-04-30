@@ -18,6 +18,8 @@
 
     <link rel="stylesheet" href="./Control.MiniMap.min.css">
     <script src="./Control.MiniMap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!--<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>-->
 
 <!-- <script type="module">import center from './@turf/center';</script>
@@ -77,6 +79,7 @@
 
        .legend { /*Legend on the map*/
             line-height: 18px;
+            font-weight: bold;
         }
         .legend i {
             width: 18px;
@@ -89,9 +92,12 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
+            font-weight: bold;
+            
         }
         .info.legendMarker span {
             margin-right: 10px;
+            margin-bottom: -2px;
             font-weight: bold;
         }
 
@@ -102,19 +108,23 @@
             position:relative; 
         }
 
-        #chartPlaceholder{ 
+        #migrationChartContainer{ 
             height: 40%;
             width: 100%;
             max-width: 450px;
             border: solid black;
             margin-top: 20px;
             display: flex;
-            justify-content: center;
             align-items: center;
-            text-align: center;
             background-color: #ffffff;
         }
 
+        #migrationChart {
+            width: 100%;
+            height: 150%;
+            justify-content: center;
+
+        }
         #dataExplanation{
             text-align: left;
             font-size:.144in;
@@ -143,7 +153,9 @@
             <p><a href="https://guscling.github.io/geog456/Final%20Project/data_explanation" target=”_blank”>Complete explanation of data sources and usage</a>
             </div>
             <p id="totalApps"></p>
-            <div id="chartPlaceholder">Placeholder for future chart. On selectng a country, will display the total asylum applications by year</div>
+            <div id="migrationChartContainer">
+                <canvas id="migrationChart"></canvas>
+            </div>
         </div>
         <div id="map"></div>
     </div>
@@ -281,16 +293,6 @@
                 document.getElementById('Button'+year).style.backgroundColor = '#9f9090'
                 selectedButton = button;
                 document.getElementById('totalApps').innerHTML = "TOTAL ASSYLUM APPLICANTS IN " + year + ": " + "<b>" + numberWithCommas(migrationData.features[28].properties["GEOG456_Total_Data_Assylum_Apps_"+year])+"</b>";
-                addPolyJson.eachLayer((layer) => { 
-                    if (!(year > 2019 && layer.feature.properties.GEOUNIT === "GREAT BRITAIN")){
-                        layer.bindPopup("<b>"+layer.feature.properties.GEOUNIT+"</b>"+"<br>" + "ASYLUM APPLICANTS: " + numberWithCommas(layer.feature.properties["GEOG456_Total_Data_Assylum_Apps_" + year]) + "<br>"  + "PERCENT NEGATIVE : " + layer.feature.properties["GEOG456_Total_Data_" + year + "_Negative"].toString() + '<br>' + "PERCENT POSITIVE : " +layer.feature.properties["GEOG456_Total_Data_" + year +"_Positive"].toString())
-                    }
-                });
-                addPointJson.eachLayer((layer) => { 
-                    if (!(year>2019 && layer.feature.properties.GEOUNIT === "GREAT BRITAIN")){
-                        layer.bindPopup("<b>"+layer.feature.properties.GEOUNIT+"</b>"+"<br>" + "ASYLUM APPLICANTS: " + numberWithCommas(layer.feature.properties["GEOG456_Total_Data_Assylum_Apps_" + year]) + "<br>"  + "PERCENT NEGATIVE : " + layer.feature.properties["GEOG456_Total_Data_" + year + "_Negative"].toString() + '<br>' + "PERCENT POSITIVE : " +layer.feature.properties["GEOG456_Total_Data_" + year +"_Positive"].toString())
-                    }
-                });
             })
         });
 
@@ -552,6 +554,80 @@
                 docExp.innerHTML=("<p>The data is based on the total <i>Negative</i> and <i>Positive</i> responses to the Eurobarometer survey question: <b><u>'Please tell me whether each of the following statements evokes a positive or negative feeling for you. Immigration of people from outside the EU'</u></b></p>");
             };
         };
+
+
+
+        //Help from ChatGPT
+        function getCountryData(countryName, years) {
+            let countryData = [];
+
+            let countryFeature = migrationData.features.find(feature => feature.properties.GEOUNIT === countryName);
+
+            if (countryFeature) {
+                years.forEach(year => {
+                    if (countryFeature.properties[`GEOG456_Total_Data_Assylum_Apps_${year}`]) {
+                        countryData.push(countryFeature.properties[`GEOG456_Total_Data_Assylum_Apps_${year}`]);
+                    }
+                });
+            }
+
+        return countryData;
+        }
+
+        //ChatGPT
+        //Gets the aaplicationd ata for a country when clicked and creates a chart based on it
+        let migrationChart;
+
+        function createChart(event) {
+            
+            let layer = event.layer;
+            
+            migrationData.features.forEach(feature => {
+                let layer = L.geoJSON(feature);
+                if (layer && layer.getBounds().contains(event.latlng)) {
+                    let countryName = feature.properties.GEOUNIT;
+                    let countryData = getCountryData(countryName, [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]);
+                    updateChart(countryName, countryData);
+                }
+            });
+        }
+
+        function updateChart(countryName, data) {
+            if (migrationChart) {
+                migrationChart.destroy(); 
+            }
+            let barData = {
+                labels: ['2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+                datasets: [{
+                    label: countryName + " APPLICATIONS BY YEAR",
+                    backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1,
+                    data: data,
+                }]
+            };
+
+        let barOptions = {
+            scales: {
+                y: {
+                    beginAtZero: true
+                },
+            responsive: true,
+            maintainAspectRatio: false,
+        }
+
+        };
+
+        const ctx = document.getElementById('migrationChart').getContext('2d');
+        migrationChart = new Chart(ctx, {
+            type: 'bar',
+            data: barData,
+            options: barOptions
+        });
+        }
+
+        map.on('click', createChart);
+        
 
         //On load of page, select 2014 button (and set the)
         document.getElementById('Button2014').click();

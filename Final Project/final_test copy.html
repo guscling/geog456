@@ -58,41 +58,9 @@
     <button class="button" id="Button2021">2021</button>
     <button class="button" id="Button2022">2022</button>
     <button class="button" id="Button2023">2023</button>
+    <canvas id="migrationChart" width="10px" height="10px"></canvas>
 
 <script>
-
-
-// Sample data for the chart
-    const data = {
-            labels: ['January', 'February', 'March', 'April', 'May'],
-            datasets: [{
-                label: 'Sales',
-                backgroundColor: 'rgba(54, 162, 235, 0.5)',
-                borderColor: 'rgba(54, 162, 235, 1)',
-                borderWidth: 1,
-                data: [10, 20, 15, 25, 30],
-            }]
-        };
-
-        // Configuration options for the chart
-        const options = {
-            scales: {
-                y: {
-                    beginAtZero: true
-                }
-            }
-        };
-
-        // Create the chart
-        var chartCanvas = document.createElement('canvas');
-        chartCanvas.width = 400;
-        chartCanvas.height = 200;
-        var ctx = chartCanvas.getContext('2d');
-        var myChart = new Chart(ctx, {
-            type: 'bar',
-            data: data,
-            options: options
-        });
 
     // Add leflet map and json layer to it
     var map = L.map('map',{ zoomControl: false, scrollWheelZoom: false, minZoom: 4, maxZoom:4, attributionControl: false }).setView([55.7765730186677,15.336914062500002], 4)
@@ -102,7 +70,6 @@
             ext: 'png',
             }).addTo(map);
 
-    
 
 
     var Stadia_StamenTonerLite = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.{ext}?api_key=c72e380a-078b-4579-84ab-95ae1f64f20d', {
@@ -200,6 +167,33 @@
     }
         }).setStyle(radius).addTo(map);
 
+    var geounit = ''    
+    function setCountryName(event) {
+        var layer = event.layer;
+        if (layer && layer.feature && layer.feature.properties && layer.feature.properties.GEOUNIT) {
+            geounit = layer.feature.properties.GEOUNIT
+            console.log(geounit);
+        }
+    }
+
+    //Help from ChatGPT
+    function getCountryData(countryName, years) {
+        let countryData = [];
+
+        let countryFeature = migrationData.features.find(feature => feature.properties.GEOUNIT === countryName);
+
+        if (countryFeature) {
+            years.forEach(year => {
+                if (countryFeature.properties[`GEOG456_Total_Data_Assylum_Apps_${year}`]) {
+                    countryData.push(countryFeature.properties[`GEOG456_Total_Data_Assylum_Apps_${year}`]);
+                }
+            });
+        }
+
+    return countryData;
+    }
+    
+
     // On click of buttons, set style based on year
     const myButtons = document.querySelectorAll("button");
     myButtons.forEach(button => {
@@ -218,15 +212,57 @@
             miniPolyStyleCen(year);  
             miniMarkerStyleMal(year);
             miniPolyStyleMal(year); 
-            
+            addPolyJson.on('click', setCountryName);
+            addPointJson.on('click', setCountryName);
         })
     });
-    //Temp: Bind popup of country names when clicked
-    addPolyJson.eachLayer((layer) => {
-        layer.bindPopup(chartCanvas);
-    })
+    
+    
+    let migrationChart;
 
+    function createChart(event) {
+        migrationData.features.forEach(feature => {
+            let layer = L.geoJSON(feature);
+            if (layer && layer.getBounds().contains(event.latlng)) {
+                let countryName = feature.properties.GEOUNIT;
+                let countryData = getCountryData(countryName, [2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023]);
+                updateChart(countryName, countryData);
+            }
+        });
+    }
 
+    function updateChart(countryName, data) {
+        if (migrationChart) {
+            migrationChart.destroy(); 
+        }
+        let barData = {
+            labels: ['2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+            datasets: [{
+                label: countryName,
+                backgroundColor: 'rgba(54, 162, 235, 0.5)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1,
+                data: data,
+            }]
+        };
+
+        let barOptions = {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        };
+
+        const ctx = document.getElementById('migrationChart').getContext('2d');
+        migrationChart = new Chart(ctx, {
+            type: 'bar',
+            data: barData,
+            options: barOptions
+        });
+    }
+
+    map.on('click', createChart);
     //addPolyJson.eachLayer(function(layer) {
     //   if (layer.feature.geometry.type === 'MultiPolygon') {
     //       console.log(layer.feature.geometry.coordinates[0]);}})
@@ -396,7 +432,12 @@
         });
     }
 
-    var marker = new L.marker([35.5562, 14.961], { opacity: 0.01 });
+
+
+
+        
+
+var marker = new L.marker([35.5562, 14.961], { opacity: 0.01 });
 marker.bindTooltip("Malta", { permanent: true, offset: [0, 0] });
 marker.addTo(miniLayersMal);
 
@@ -408,6 +449,7 @@ var marker = new L.marker([49.1253, 9.2396], { opacity: 0.01 });
 marker.bindTooltip("Benelux", { permanent: true, offset: [0, 0] });
 marker.addTo(miniLayersBen);
 
+document.getElementById('Button2014').click();
 
 </script>
     
