@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Migration Map</title>
     
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
     integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
@@ -39,6 +39,7 @@
             width: 100%;
             min-height: 100%;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            z-index: 1;
         }
 
         #map { /* Div for the map*/
@@ -60,6 +61,7 @@
             background-color: #f0f0f0;
             float: left;
             max-width: 500px;
+            z-index: 3;
         }
 
         .button {
@@ -77,7 +79,7 @@
             background-color: #9f9090; 
         }
 
-       .legend { /*Legend on the map*/
+       .legend { /*Legends on the map*/
             line-height: 18px;
             font-weight: bold;
         }
@@ -111,6 +113,7 @@
         #migrationChartContainer{ 
             height: 40%;
             width: 100%;
+            max-height: 300px;
             max-width: 450px;
             border: solid black;
             margin-top: 20px;
@@ -128,12 +131,16 @@
         #dataExplanation{
             text-align: left;
             font-size:.144in;
+            z-index: 0;
+        }
+        #link{
+            z-index: 100;
         }
     </style>
 </head>
 
 <body>
-    <h1 id="title">Is Public Opinion of Migration Impacted by the Number of Assylum Seekers in the EU?</h1>
+    <h1 id="title">Is Public Opinion of Migration Impacted by the Number of Asylum Seekers in the EU?</h1>
     <div id="wrapper">
         <div id="sideBar">
             <div id="buttonContainer"> 
@@ -150,7 +157,7 @@
             </div>
             <div id="explanation wrapper">
             <div id="dataExplanation"></div>
-            <p><a href="https://guscling.github.io/geog456/Final%20Project/data_explanation" target=”_blank”>Complete explanation of data sources and usage</a>
+            <a href="https://guscling.github.io/geog456/Final%20Project/data_explanation"  id = 'link' target=”_blank”>Complete explanation of data sources and usage</a>
             </div>
             <p id="totalApps"></p>
             <div id="migrationChartContainer">
@@ -225,9 +232,9 @@
         //Sets the radius of the circle markers
         function radius(feature) {
             
-            var assylumApps = feature.properties["GEOG456_Total_Data_Assylum_Apps_" + year];
-            var radius = getSize(assylumApps)
-            var color = circleColor(assylumApps)
+            var asylumApps = feature.properties["GEOG456_Total_Data_Assylum_Apps_" + year];
+            var radius = getSize(asylumApps)
+            var color = circleColor(asylumApps)
     
 
             return {
@@ -292,7 +299,7 @@
                 dataExplanation(year);
                 document.getElementById('Button'+year).style.backgroundColor = '#9f9090'
                 selectedButton = button;
-                document.getElementById('totalApps').innerHTML = "TOTAL ASSYLUM APPLICANTS IN " + year + ": " + "<b>" + numberWithCommas(migrationData.features[28].properties["GEOG456_Total_Data_Assylum_Apps_"+year])+"</b>";
+                document.getElementById('totalApps').innerHTML = "TOTAL ASYLUM APPLICANTS IN " + year + ": " + "<b>" + numberWithCommas(migrationData.features[28].properties["GEOG456_Total_Data_Assylum_Apps_"+year])+"</b>";
             })
         });
 
@@ -341,7 +348,7 @@
         var legendMarker = L.control({ position: 'topleft' });
         legendMarker.onAdd = function (map) {
             var div = L.DomUtil.create('div', 'info legendMarker');
-            var title = '<strong>Number of Assylum <br> Applicants</strong><br>'; 
+            var title = '<strong>Number of Asylum <br> Applicants</strong><br>'; 
             var grades = [0,500,5000,10000,50000,100000,500000];
             var labels = [];
 
@@ -402,9 +409,9 @@
         //Set style of points
         function miniMarkerStyleBen(year) {
             miniMarkersBen.eachLayer(function (layer) {
-                var assylumApps = layer.feature.properties["GEOG456_Total_Data_Assylum_Apps_" + year];
-                var radius = getSize(assylumApps);
-                var color = circleColor(assylumApps);
+                var asylumApps = layer.feature.properties["GEOG456_Total_Data_Assylum_Apps_" + year];
+                var radius = getSize(asylumApps);
+                var color = circleColor(asylumApps);
                 layer.setStyle({
                     radius: radius,
                     fillColor: "transparent",
@@ -460,9 +467,9 @@
         //Set style of markers
         function miniMarkerStyleCen(year) {
             miniMarkersCen.eachLayer(function (layer) {
-                var assylumApps = layer.feature.properties["GEOG456_Total_Data_Assylum_Apps_" + year];
-                var radius = getSize(assylumApps);
-                var color = circleColor(assylumApps);
+                var asylumApps = layer.feature.properties["GEOG456_Total_Data_Assylum_Apps_" + year];
+                var radius = getSize(asylumApps);
+                var color = circleColor(asylumApps);
                 layer.setStyle({
                     radius: radius,
                     fillColor: "transparent",
@@ -516,9 +523,9 @@
         //Set style for markers
         function miniMarkerStyleMal(year) {
             miniMarkersMal.eachLayer(function (layer) {
-                var assylumApps = layer.feature.properties["GEOG456_Total_Data_Assylum_Apps_" + year];
-                var radius = getSize(assylumApps);
-                var color = circleColor(assylumApps);
+                var asylumApps = layer.feature.properties["GEOG456_Total_Data_Assylum_Apps_" + year];
+                var radius = getSize(asylumApps);
+                var color = circleColor(asylumApps);
                 layer.setStyle({
                     radius: radius,
                     fillColor: "transparent",
@@ -599,7 +606,7 @@
             let barData = {
                 labels: ['2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
                 datasets: [{
-                    label: countryName + " APPLICATIONS BY YEAR",
+                    label: countryName + " FIRST TIME ASYLUM APPLICANTS",
                     backgroundColor: 'rgba(54, 162, 235, 0.5)',
                     borderColor: 'rgba(54, 162, 235, 1)',
                     borderWidth: 1,
