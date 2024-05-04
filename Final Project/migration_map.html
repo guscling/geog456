@@ -349,7 +349,8 @@
                 var size = getSize(grades[i] + 1)*2;
                 labels.push(
                     '<i style="background: transparent;"></i> ' +
-                    '<span style="display: inline-block; width: ' + size + 'px; height: ' + size + 'px; background-color: transparent; border-radius: 50%; border: 3px dashed black;"></span> ' +
+                    '<span style="display: inline-block; width: ' + size + 'px; height: ' + size + 
+                    'px; background-color: transparent; border-radius: 50%; border: 3px dashed black;"></span> ' +
                     grades[i] + (grades[i + 1] ? '&ndash;' + grades[i + 1] : '+')
                 );
             }
@@ -417,7 +418,7 @@
             });
         }
 
-        //Create minimap centered on Benelux
+        //Create minimap centered on Central Europe
         var miniOsmCen = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.png?api_key=c72e380a-078b-4579-84ab-95ae1f64f20d', {
                     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
                     minZoom: 5,
@@ -574,8 +575,8 @@
         return countryData;
         }
 
-        //ChatGPT
-        //Gets the aaplicationd ata for a country when clicked and creates a chart based on it
+        //Help from ChatGPT
+        //Gets the aaplicationd data for a country when clicked and creates a chart based on it
         let migrationChart;
 
         function createChart(event) {
