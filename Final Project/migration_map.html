@@ -38,6 +38,7 @@
             width: 100%;
             min-height: 100%;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            position: relative;
         }
 
         #map { /* Div for the map*/
@@ -48,8 +49,24 @@
             float: right; 
             background-color: black; 
             border: 1px solid black;
+            display: inline-flex;
+            position:relative;
         }
-
+        @media screen and (max-height: 741px) {
+            #map {
+                height: 105%;
+            }
+        }
+        @media screen and (max-height: 700px) {
+            #map {
+                height: 110%;
+            }
+        }
+        @media screen and (max-height: 668px) {
+            #map {
+                height: 120%;
+            }
+        }
         #sideBar { /*the div next to the map containing buttons, explanation, and chart placeholder*/
             width: 30%;
             min-width: 408px;
@@ -87,16 +104,18 @@
             opacity: 0.7;
         }
         .info.legendMarker {
-            display: flex;
+            display:flex;
             flex-direction: column;
             align-items: flex-start;
             font-weight: bold;
+            position: relative;
             
         }
         .info.legendMarker span {
             margin-right: 10px;
             margin-bottom: -2px;
             font-weight: bold;
+            display: inline-block;
         }
 
         #title{
@@ -266,6 +285,13 @@
         }
             }).setStyle(radius).addTo(map);
 
+        function resizeWidth() {
+            if (window.innerWidth < 1365) {
+                map.setView([55.55349545845371,19.942223059183976], 4)
+            }
+        }
+        resizeWidth()
+
         //Button function
         //Sets the style of polygons and markers based on data from slected year
         // Also changes data for minimaps and popup markers
@@ -377,12 +403,12 @@
         var miniLayersBen = new L.LayerGroup([miniPolyBen,miniMarkersBen,miniOsmBen]);
         //Create map on bottom right
         var miniMapBen = new L.Control.MiniMap(miniLayersBen, {
-            centerFixed: [51.4, 5.4623],
+            centerFixed: [51.2, 5.4623],
             zoomLevelFixed: 6,
-            height: 300,
-            width: 300,
+            height: 250,
+            width: 250,
+            position:'topright',
             aimingRectOptions: {color: 'transparent'},
-            position:'bottomright',
             }).addTo(map);
         //Set style of polygons
         function miniPolyStyleBen(year) {
@@ -439,7 +465,7 @@
             zoomLevelFixed: 5,
             height: 250,
             width: 250,
-            position: 'topright',
+            position:'bottomright',
             aimingRectOptions: {color: 'transparent'},
             }).addTo(map);
         //Set style of polygons
@@ -495,7 +521,7 @@
             zoomLevelFixed: 8,
             height: 150,
             width: 150,
-            position: 'topright',
+            position:'bottomright',
             aimingRectOptions: {color: 'transparent'},
             }).addTo(map);
         //Set style of polygons 
@@ -540,7 +566,7 @@
         labelCen.bindTooltip("Central Europe", { permanent: true, offset: [0, 0] });
         labelCen.addTo(miniLayersCen);
 
-        var labelBen = new L.marker([49.1253, 9.2396], { opacity: 0.01 });
+        var labelBen = new L.marker([49.2853, 8.7396], { opacity: 0.01 });
         labelBen.bindTooltip("Benelux", { permanent: true, offset: [0, 0] });
         labelBen.addTo(miniLayersBen);
 
