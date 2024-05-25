@@ -147,6 +147,14 @@
         #dataExplanation{
             text-align: left;
             font-size:.144in;
+            padding-bottom: 10px;
+        }
+        #link{
+            color: #1e90ff;
+            text-decoration: none;
+        }
+        #link:hover{
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -175,6 +183,7 @@
             <div id="migrationChartContainer">
                 <canvas id="migrationChart"></canvas>
             </div>
+            <h5 style="text-align:center; margin-top:-25px;color:#343232c2" id="select-country">Select a country</h5>
         </div>
         <div id="map"></div>
     </div>
@@ -654,8 +663,7 @@
         }
 
         map.on('click', createChart);
-        
-
+        var selectCountry = document.getElementById("select-country")
         //On load of page, select 2014 button (and set the)
         document.getElementById('Button2014').click();
 
